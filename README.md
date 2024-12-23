@@ -15,7 +15,7 @@ These disiplins involve rifles, pistols, shotguns and require technique, focus, 
 
 ## Budget 
 
-IF you were wealthy you would need this guide... you could hire the best of the best to consult you on purchasing the best of the best.  This guide is intended to not just provide rational information but also sensable recomdations.     
+IF you were wealthy you wouldnt need this guide... you could hire the best of the best to consult you on purchasing the best of the best.  This guide is intended to not just provide rational information but also sensable recomdations.     
 
 ## Skip the filler...
 
@@ -23,7 +23,12 @@ This guide is going to assume that the reader knows the basics of firearms and a
 
 ## BLOT (Bottom Line On TOP)
 
-Most mid tier rifles running factory ammo will outshot most shooters.  More than a handfull of "budget" tier rifles will do the same.  There is no magical encantation to make procision shooting "easy".  It is hard and nothing is changing that.
+Most mid tier rifles running factory ammo will outshot most shooters.  More than a handfull of "budget" tier rifles will do the same.  There is no magical encantation to make procision shooting "easy".  It is hard and nothing is changing that.  Anyone telling you differnt is selling somthing.  
+
+
+
+
+
 
 
 
