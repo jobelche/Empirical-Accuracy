@@ -19,11 +19,13 @@ IF you were wealthy you wouldnt need this guide... you could hire the best of th
 
 ## Skip the filler...
 
-This guide is going to assume that the reader knows the basics of firearms and ammination.
+This guide is going to assume that the reader knows the basics of firearms and ammination.  The temptation to fill the first 70 pages with definations of trigger shoes and blackpowder burn rates will be resisted.  That is what the index is for  
 
-## BLOT (Bottom Line On TOP)
+B# BLOT (Bottom Line On TOP)
 
-Most mid tier rifles running factory ammo will outshot most shooters.  More than a handfull of "budget" tier rifles will do the same.  There is no magical encantation to make procision shooting "easy".  It is hard and nothing is changing that.  Anyone telling you differnt is selling somthing.  
+Most mid tier rifles running mid teir ammonition will out perform most shooters.  More than a handfull of "budget" tier rifles brands will do the same.  There is no incantation you can say to a bag rest or magical rune to carve into the barrel to make procision shooting "easy".  It is hard and nothing is changing that.  Anyone telling you differnt is selling somthing.
+
+##
 
 
 
