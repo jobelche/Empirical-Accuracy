@@ -31,7 +31,7 @@ Most mid tier rifles with most mid tier glass running most mid teir ammonition w
 
 Skip to the end of this guide for recomdation on hardware that is perfectly capable of ethically harvesting game or capable of getting you medaled in a local compatition.  
 
-## THe proof is in the LLN
+## The proof is in the LLN
 
 According to the Webster dictionary the Law of Large Numbers is "a theorem in mathematical statistics: the probability that the absolute value of the difference between the mean of a population sample and the mean of the population from which it is drawn is greater than an arbitrarily small amount approaches zero as the size of the sample approaches infinity"
 
