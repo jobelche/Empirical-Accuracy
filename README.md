@@ -7,13 +7,13 @@ The purpose of this guide is to evalute the effecacy of many concepts common in 
   
 For this guide, "Precision Shooting" will be defined as the designed intent to discharge a firearm with a high degree of accuracy. Two major shooting disciplines encomposed includs:
 
-Hunting: In this context, Precision Shooting enables the hunter to accurately target and humanely harvest game animals. Hunters must be proficient in calculating the effects of distances, understanding enviromental (weather) conditions, and executing proper shooting techniques to ensure a successful hunt.
+Hunting: In this context, Precision Shooting enables the hunter to accurately target and humanely harvest game animals.
 
 Competition: Precision Shooting in competitive settings typocally envolves organized events where participants aim (pun intended) to achieve the highest possible scores by shooting targets from various distances and positions.
 
-Both discipliens require profieientcies such as; calculating the effects of distances, understanding enviromental (weather) conditions, and executing proper shooting techniques.  Each disciplin will end with very differnt results.  A comparison might be successfully 
+Both discipliens require profieientcies such as; calculating the effects of distances, understanding enviromental (weather) conditions, and executing proper shooting techniques.  Each disciplin will end with very differnt results. 
 
-These disiplins involve rifles, pistols, shotguns and require technique, focus, mental and physacl discipline.  This guide will mainly focus on analizing processes involving rifle hardware and ammonition.
+Other disciplines include Military and Law enforcment.  These are out of bounds for this guide.  The focus will be primarliar on competiton shoots and apply those concepts, where applicable, to improve hunting profeicientcies. 
 
 ## Budget 
 
