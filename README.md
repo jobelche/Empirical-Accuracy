@@ -23,7 +23,7 @@ IF you were wealthy you wouldnt need this guide... you could hire the best of th
 
 This guide is going to assume that the reader knows the basics of firearms and ammination.  The temptation to fill the first 70 pages with definations of trigger shoes and blackpowder burn rates will be resisted.  That is what the index is for.  
 
-B# BLOT (Bottom Line On TOP)
+## BLOT (Bottom Line On TOP)
 
 You dont need to do anything extroidanary to aquire competition level hardware.  
 
