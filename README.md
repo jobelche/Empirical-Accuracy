@@ -49,11 +49,17 @@ If someone flips a coin 3 times and it lands heads-up three times you instinctiv
 ### Mean Radius
 In percision Shooting the mean radius is used to measure the accuracy of a group of shots. It represents the average distance between each shot and the center of the group.  This metric provides a more comprehensive measure of accuracy than simply measuring the distance between the two farthest shots (extreme spread).  Spread measures the two worst shots.  It is a uselfull metric but not the most usefull metric.  When applied to LLN Mean Radius becomes a much better metric.  
 
-Compaired to the "old ways" calculating the mean radius is much more difficult to calculate.  The basics concept is determining the center of the group, measuring each printed shot from the center then fuinding the mean of each shot printed.  Use the following formula √((x₂ - x₁)² + (y₂ - y₁)²) where (x₁, y₁) are the coordinates of the group center and (x₂, y₂) are the coordinates of the shot hole.  
+Compaired to the "old ways" calculating the mean radius is much more difficult to calculate.  The basics concept is determining the center of the group, measuring each printed shot from the center then finding the mean of each shot printed.  Use the following formula √((x₂ - x₁)² + (y₂ - y₁)²) where (x₁, y₁) are the coordinates of the group center and (x₂, y₂) are the coordinates of the shot hole.  
 
 Using a "ladder" target and a spreadsheat can take the process form overly complicated to just a bit monotonous.  
 
+TODO: Add examples of ladder targets and and excel spreadsheet with formulas  
 
+### Make a base line
+
+In its most general sense, a baseline is a starting point or a reference point against which future measurements, observations, or comparisons are made. It represents the initial state or condition before a change, intervention, or experiment is introduced.
+
+Once you have a baseline only change a single varable at a time.  An example of this could be to baseline your rifle with a realtive low cost ammo.  Then only change the ammo.  The result will tell you how much of a difference the ammo change makes.  The result might be that you discover budget ammo is perfectly effectiver for your needs.         
 
 
 
