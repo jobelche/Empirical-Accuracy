@@ -25,7 +25,7 @@ This guide is going to assume that the reader knows the basics of firearms and a
 
 ## BLOT (Bottom Line On TOP)
 
-You don't need to do anything extraordinary to acquire competition level hardware.  
+You don't need to do anything extraordinary to acquire competition winning hardware.  
 
 Most mid tier rifles with most mid tier optics running most mid tier ammunition will outperform most shooters.  More than a handful of "budget" tier rifles brands will do the same.  There is no incantation you can say to a bag rest or magical rune to carve into the barrel to make precision shooting "easy".  Out shootin a store bought rifle is hard and nothing is changing that.  Anyone telling you different is selling something.  
 
@@ -54,6 +54,13 @@ Compaired to the "old ways" calculating the mean radius is much more difficult t
 Using a "ladder" target and a spreadsheat can take the process form overly complicated to just a bit monotonous.  
 
 TODO: Add examples of ladder targets and and excel spreadsheet with formulas  
+
+## Beyond the hardware...  PPPP
+Position
+Picture
+Pull
+Practice
+
 
 ### Make a base line
 
