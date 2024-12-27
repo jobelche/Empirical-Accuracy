@@ -17,7 +17,7 @@ Other disciplines include Military and Law Enforcement.  These are out of bounds
 
 ## Budget 
 
-If you are wealthy you wouldn't need this guide... you could hire the best of the best to consult you on purchasing the best of the best.  This guide is intended to not just provide rational information but also sensible recommendations.     
+This guide is intended to not just provide rational information but also sensible recommendations.     
 
 ## Skip the filler...
 
