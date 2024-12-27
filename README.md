@@ -25,17 +25,17 @@ This guide is going to assume that the reader knows the basics of firearms and a
 
 ## BLOT (Bottom Line On TOP)
 
-You don't need to do anything extraordinary to acquire competition winning hardware.  
+You don't need to do anything extraordinary to acquire competition quility hardware.  
 
 Most mid tier rifles with most mid tier optics running most mid tier ammunition will outperform most shooters.  More than a handful of "budget" tier rifles brands will do the same.  There is no incantation you can say to a bag rest or magical rune to carve into the barrel to make precision shooting "easy".  Out shootin a store bought rifle is hard and nothing is changing that.  Anyone telling you different is selling something.  
 
 Skip to the end of this guide for recommendations on hardware that is perfectly capable of ethically harvesting game or capable of getting you medaled in a local competition.
 
 ## The old ways
-My first rifle was sighted in using 3 shot groups.  I was instructed by my father to fire three shots before adjusting the scope.  I did as instructed and with a little less that half a box of 30-06 Core-Lokt remaining he and I were both satisfied that the rifle was "sighted in".  For most of my life afterwards I evaluated rifles and ammo based on three shot samples.  And why wouldn't I?  There have been countless game harvested with rifles based on three shot samples.  THe was simple, cheap and more importantly, it works!  
+My first rifle was sighted in using 3 shot groups.  I was instructed by my father to fire three shots before adjusting the scope.  I did as instructed and with a little less that half a box of 30-06 Core-Lokt remaining he and I were both satisfied that the rifle was "sighted in".  For most of my life afterwards I evaluated rifles and ammo based on three shot samples.  And why wouldn't I?  There have been countless game harvested with rifles based on three shot samples.  It is simple, cheap and more importantly, it works!  
 
 ### Then the internet... 
-It doesn't take long to realize that there are as many different ways of evaluating rifles and ammo as there were fathers and sons at the range... And they all seem to work just fine.  But something felt off.  How can so many different processes result in the same results?  I hesitantly realized that the old ways might actually be based in belief and faith.  It was devastating to also realize that an overwhelming majority of internet content was selling snake oil to reinforce those beliefs and faith.  How can anyone wade through the snake oil.
+It doesn't take long to realize that there are as many different ways of evaluating rifles and ammo as there were fathers and sons at the range... And they all seem to work just fine.  But something felt off.  How can so many different processes result in the same results?  I hesitantly realized that the old ways might actually be based in belief and faith.  It was devastating to also realize that an overwhelming majority of internet content was selling snake oil to reinforce those beliefs and faith.
 
 ## The proof is in the LLN
 According to the Webster dictionary the Law of Large Numbers is "a theorem in mathematical statistics: the probability that the absolute value of the difference between the mean of a population sample and the mean of the population from which it is drawn is greater than an arbitrarily small amount approaches zero as the size of the sample approaches infinity"
