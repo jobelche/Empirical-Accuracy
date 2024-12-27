@@ -1,7 +1,7 @@
 # Empirical Accuracy
 Demystifying precision shooting.
 
-The purpose of this guide is to evaluate the efficacy of many concepts common in the arena of precision shooting.
+The purpose of this guide is to evaluate repeatable concepts common in the arena of precision shooting.
 
 ## What is "Precision Shooting"
   
