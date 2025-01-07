@@ -48,7 +48,7 @@ In its most general sense, a baseline is a starting point or a reference point a
 
 A baseline starts at 20 recorded impacts.  30 is better.  50 is about the max you will ever need.  This guide will demonstrate a process to show how much more accurate a 30 baseline is compared to group sizes of 3, 5, 10 etc.  Dont skip the "flyers".  There is a process to account for a outliers.      
 
-
+Check for normality with Shapiro-Wilk
 
 ### Mean Radius is more useful.
 For this guide, the mean radius is the average distance of each impact from the center of the group of impacts. This metric provides a more comprehensive measure of accuracy than simply measuring the distance between the two farthest shots (extreme spread). Extreme spread measures the two worst shots.  We care less about the 2 worst shots.  We care more about the good shots you can expect.
