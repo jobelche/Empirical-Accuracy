@@ -43,27 +43,27 @@ If someone flips a coin 3 times and it lands heads-up three times, you instincti
 ### Group size is less useful.
 Stop basing your system off group size (extreme spread). If you care about precision, compare each impact from every other impact. Each piece of data added (increasing sample size) makes your data as a whole more accurate. You are paying for the ammo; the least you can do is log every shot. Record the distance from Point of Aim and muzzle velocity (if you have a chronograph).
 
+## Make a baseline
+In its most general sense, a baseline is a starting point or a reference point against which future measurements, observations, or comparisons are made. It represents the initial state or condition before a change, intervention, or experiment is introduced.
+
+A baseline starts at 20 recorded impacts.  30 is better.  50 is about the max you will ever need.  This guide will demonstrate a process to show how much more accurate a 30 baseline is compared to group sizes of 3, 5, 10 etc.  Dont skip the "flyers".  There is a process to account for a outliers.      
+
+
+
 ### Mean Radius is more useful.
-For this guide, the mean radius is used to measure the dispersion of a group of shots. MR is the average distance of each impact from the center of the group. This metric provides a more comprehensive measure of accuracy than simply measuring the distance between the two farthest shots (extreme spread). Extreme spread measures the two worst shots. Mean Radius becomes a much better metric.
+For this guide, the mean radius is the average distance of each impact from the center of the group of impacts. This metric provides a more comprehensive measure of accuracy than simply measuring the distance between the two farthest shots (extreme spread). Extreme spread measures the two worst shots.  We care less about the 2 worst shots.  We care more about the good shots you can expect.
 
 Compared to the "old ways," calculating the mean radius is much more difficult. The basic concept is determining the center of the group, measuring each printed shot from the center, then finding the mean of each shot printed. Use the following formula: √((x₂ - x₁)² + (y₂ - y₁)²) where (x₁, y₁) are the coordinates of the group center and (x₂, y₂) are the coordinates of the shot hole.
 
 Don't let the equation turn you off from the process. Your phone has more compute power than the entire solar system had in the 1950s; technology will make this process simple.
 
-TODO: Add examples of ladder targets and an Excel spreadsheet with formulas. ARA unlimited class target.
 
-Make a baseline
-In its most general sense, a baseline is a starting point or a reference point against which future measurements, observations, or comparisons are made. It represents the initial state or condition before a change, intervention, or experiment is introduced.
 
 Beyond the hardware... PPPP
 Position
 Picture
 Pull
 Practice
-Make a baseline
-In its most general sense, a baseline is a starting point or a reference point against which future measurements, observations, or comparisons are made. It represents the initial state or condition before a change, intervention, or experiment is introduced.
-
-Once you have a baseline, only change a single variable at a time. An example of this could be to baseline your rifle with a relatively low-cost ammo. Then only change the ammo. The result will tell you how much of a difference the ammo change makes. The result might be that you discover budget ammo is perfectly effective for your needs.
 
 First you gotta’ hit it.
 In competitive shooting, placing a shot is good enough. Holes in the paper determine the score; the score determines the success. In hunting, the shooter needs to be mindful that success has an ethical element. This guide will tend to focus on the optimization of hit placement above all other considerations. This means a target-focused competition rifle is, IMHO, mostly unfit for harvesting game. In competition, safety is paramount, and hit placement is next. In hunting, safety is paramount, and ethics is next.
