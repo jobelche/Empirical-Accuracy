@@ -1,5 +1,5 @@
 # Empirical Accuracy
-Demystifying precision shooting.
+Demystifying statistical precision analysys of shooting.
 
 The purpose of this guide is to evaluate repeatable concepts common in the arena of precision shooting.
 
@@ -46,16 +46,16 @@ Stop basing your system off group size (extreme spread). If you care about preci
 ## Make a baseline
 In its most general sense, a baseline is a starting point or a reference point against which future measurements, observations, or comparisons are made. It represents the initial state or condition before a change, intervention, or experiment is introduced.
 
-A baseline starts at 20 recorded impacts.  30 is better.  50 is about the max you will ever need.  This guide will demonstrate a process to show how much more accurate a 30 baseline is compared to group sizes of 3, 5, 10 etc.  Dont skip the "flyers".  There is a process to account for a outliers.      
-
-Check for normality with Shapiro-Wilk
+Check for normality with Shapiro-Wilk test.  The Shapiro-Wilk is a way to check if a set of data is likely to have come from a normal distribution (the bell curve). It gives you a score (W) and a p-value. The formula to calculate W is (Σ aᵢ * xᵢ)² / Σ (xᵢ - x̄)².  If the p-value is low (usually below 0.05), it suggests your data is probably not normally distributed. Shapiro-Wilk is commonly used in statistics to make sure data meets certain assumptions before using other tests.  Expect to collect around 20 impacts.  30 is better.  50 is about the max you will ever need.  In my experiance I dont often see a p>0.05 until around 20 shots.  Its so commmon that I just assume I will be starting at 20 and I make my targets accordingly.  Dont skip the "flyers".  There is a process to account for a outliers.    
 
 ### Mean Radius is more useful.
-For this guide, the mean radius is the average distance of each impact from the center of the group of impacts. This metric provides a more comprehensive measure of accuracy than simply measuring the distance between the two farthest shots (extreme spread). Extreme spread measures the two worst shots.  We care less about the 2 worst shots.  We care more about the good shots you can expect.
+For this guide, the mean radius is the average distance of all impacts from the geometric center of the combined impacts. This metric provides a more comprehensive measure of precision (of lack of) than simply measuring the distance between the two farthest shots (extreme spread). Extreme spread measures the two worst shots.  We care less about the 2 worst shots.  We care more about how often you should be expecting the good shots.
 
-Compared to the "old ways," calculating the mean radius is much more difficult. The basic concept is determining the center of the group, measuring each printed shot from the center, then finding the mean of each shot printed. Use the following formula: √((x₂ - x₁)² + (y₂ - y₁)²) where (x₁, y₁) are the coordinates of the group center and (x₂, y₂) are the coordinates of the shot hole.
+Compared to the "old ways," calculating the mean radius is much more difficult. The basic concept is determining the center of the group, measuring each printed shot from the center, then finding the mean of each shot printed. The formula to calculate the MR is as follows: √((x₂ - x₁)² + (y₂ - y₁)²) where (x₁, y₁) are the coordinates of the group center and (x₂, y₂) are the coordinates of the shot hole.
 
-Don't let the equation turn you off from the process. Your phone has more compute power than the entire solar system had in the 1950s; technology will make this process simple.
+Don't let the equations turn you off from the process. Your phone has more compute power than the entire solar system had in the 1950s; technology will make this process simple.
+
+
 
 Beyond the hardware... PPPP
 Position
