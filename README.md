@@ -1,7 +1,7 @@
 # Empirical Accuracy
-Demystifying statistical precision analysys of shooting.
+Demystifying statistical analysys of shooting.
 
-The purpose of this guide is to evaluate repeatable concepts common in the arena of precision shooting.
+The purpose of this guide is to evaluate repeatable concepts in the arena of precision shooting.
 
 ## What is "Precision Shooting"?
 For this guide, "Precision Shooting" will be defined as the designed intent to discharge a firearm with a high degree of accuracy. Two major shooting disciplines include:
