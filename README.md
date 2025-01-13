@@ -43,9 +43,6 @@ If someone flips a coin 3 times and it lands heads-up three times, you instincti
 ## Data is king... a better system
 Use every peice of data.  Every shot not recorded is wasted data.
 
-### Group size is less useful.
-Stop basing your system enterly off group size (extreme spread).  Each piece of data added (increasing sample size) makes your data as a whole more accurate. You are paying for the ammo; the least you can do is log every shot. Record the distance from Point of Aim (x and y) and muzzle velocity (if you have a chronograph).  Extreme Spread tells you how bad the two worst shots were.  Small group sizes limits the chance of a higher extreme spread.  Ignoring "fliers" is intruducing personal bias to the system.  Combine all this and its a receipe for deceit.     
-
 ### Make a baseline
 In its most general sense, a baseline is a starting point or a reference point against which future measurements, observations, or comparisons are made. It represents the initial state or condition before a change, intervention, or experiment is introduced.
 
@@ -56,14 +53,17 @@ Log the x and y distance of every shot from the point of aim.  I design targets 
 ### How much data is enough
 Check for normality with Shapiro-Wilk test.  The Shapiro-Wilk is a way to check if a set of data is likely to have come from a normal distribution (the bell curve). It gives you a score (W) and a p-value. The formula to calculate W is (Σ aᵢ * xᵢ)² / Σ (xᵢ - x̄)².  If the p-value is low (usually below 0.05), it suggests your data is probably not normally distributed. Shapiro-Wilk is commonly used in statistics to make sure data meets certain assumptions before using other tests.  Expect to collect around 20 impacts.  30 is better.  50 is about the max you will ever need.  In my experiance I dont often see a p>0.05 until around 20 shots.  Its so commmon that I just assume I will be starting at 20 and I make my targets accordingly.  Dont skip the "flyers".  There is a process to account for a outliers.    
 
+### Extreme Spread: Group size is least useful.
+Dont base your system enterly off group size (extreme spread).  Each piece of data added (increasing sample size) makes your data as a whole more accurate. You are paying for the ammo; the least you can do is log every shot. Record the distance from Point of Aim (x and y) and muzzle velocity (if you have a chronograph).  Extreme Spread tells you how bad the two worst shots were.  Small group sizes limits the chance of a higher extreme spread.  Ignoring "fliers" is intruducing personal bias to the system.  Combine all this and its a receipe for deceit.
+
+
+
 ### Mean Radius is more useful.
 For this guide, the mean radius is the average distance of all impacts from the geometric center of the combined impacts. This metric provides a more comprehensive measure of precision (of lack of) than simply measuring the distance between the two farthest shots (extreme spread). Extreme spread measures the two worst shots.  We care less about the 2 worst shots.  We care more about how often you should be expecting the good shots.
 
 Compared to the "old ways," calculating the mean radius is much more difficult. The basic concept is determining the center of the group, measuring each printed shot from the center, then finding the mean of each shot printed. The formula to calculate the MR is as follows: √((x₂ - x₁)² + (y₂ - y₁)²) where (x₁, y₁) are the coordinates of the group center and (x₂, y₂) are the coordinates of the shot hole.
 
 Don't let the equations turn you off from the process. Your phone has more compute power than the entire solar system had in the 1950s; technology will make this process simple.
-
-
 
 Beyond the hardware... PPPP
 Position
@@ -76,4 +76,10 @@ In competitive shooting, placing a shot is good enough. Holes in the paper deter
 
 TODO: Add examples of ladder targets and an Excel spreadsheet with formulas. ARA unlimited class target.
 
+Circular Error Probable (CEP): A measure of dispersion
 
+Extreme Spread (ES): A measure of dispersion
+
+Horizontal and Vertical Variances: Measures of dispersion
+
+Mean Radius (MR): A measure of dispersion
