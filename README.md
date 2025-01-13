@@ -6,16 +6,16 @@ The purpose of this guide is to evaluate repeatable concepts in the arena of pre
 ## What is "Precision Shooting"?
 For this guide, "Precision Shooting" will be defined as the designed intent to discharge a firearm with a high degree of accuracy. Two major shooting disciplines include:
 
-Hunting: In this context, Precision Shooting enables the hunter to accurately target and ethically harvest game animals.
+Hunting: In this context, Precision Shooting enables the hunter evaluate their system to determin if they can ethically harvest game animals.
 
 Competition: Precision Shooting in competitive settings typically involves organized events where participants aim (pun intended) to achieve the highest possible scores by shooting targets from various distances and positions.
 
-Both disciplines require proficiencies such as calculating the effects of distance, understanding environmental (weather) conditions, and executing proper shooting techniques. Each discipline will end with very different results.
+Both disciplines require proficiencies such as calculating the effects of distance, understanding environmental (weather) conditions, and executing proper shooting techniques.
 
 Other disciplines include Military and Law Enforcement. These are outside the scope of this guide. The focus will be primarily on competition shoots and applying those concepts, where applicable, to improve hunting proficiencies.
 
 ## Budget
-This guide is intended to not just provide rational information but also sensible recommendations.
+Shooting is expensive, and it seems to be getting more expenzive every year.  Following this guide will not be cheap.  The hope is to prevent waste of time and materials.  It will feel more expensive up front (becuse it will be).  Every peice of data collect early will make testing/troubleshooting less expensivve in the future.   
 
 ## Skip the filler...
 This guide is going to assume that the reader knows the basics of firearms and ammunition. The temptation to fill the first 70 pages with definitions of trigger shoes and black powder burn rates will be resisted. That is what the index is for.
@@ -23,13 +23,13 @@ This guide is going to assume that the reader knows the basics of firearms and a
 ## BLOT (Bottom Line On Top)
 You don't need to do anything extraordinary to acquire competition-quality hardware.
 
-Most mid-tier rifles with most mid-tier optics running most mid-tier ammunition will outperform most shooters. More than a handful of "budget"-tier rifle brands will do the same. There is no incantation you can say over a bag rest or magical rune to carve into the turret ring to make precision shooting "easy." Outshooting a store-bought rifle is hard, and nothing is changing that. Anyone telling you different is selling something.
+Most mid-tier rifles with most mid-tier optics running most mid-tier ammunition will outperform most shooters. More than a handful of "budget" rifle brands will do the same. There is no incantation you can say over a bag rest or magical rune to carve into the turret ring to make precision shooting "easy". Outshooting a store-bought rifle is hard, and nothing is changing that. Anyone telling you different is selling something.
 
 ## The old ways
-My first rifle was sighted in using 3-shot groups. I was instructed by my father to fire three shots before adjusting the scope. I did as instructed, and with a little less than half a box of 30-06 Core-Lokt remaining, he and I were both satisfied that the rifle was "sighted in." For most of my life afterward, I evaluated rifles and ammo based on three-shot samples. And why wouldn't I? There have been countless game harvested with rifles sighted in based on three-shot samples. It is simple, cheap, and, more importantly, it works!
+My first scoped rifle was sighted in using 3-shot groups. I was instructed by my father to fire three shots before adjusting the scope. I did as instructed, and with a little less than half a box of 30-06 Core-Lokt remaining, he and I were both satisfied that the rifle was "sighted in". For most of my life afterward, I evaluated rifles and ammo based on three-shot samples. Why wouldn't I? There have been countless game harvested with rifles sighted in based on three-shot samples. It is simple, cheap, and, more importantly, it works!  
 
 ### Then the internet...
-It doesn't take long to realize that there are as many different ways of evaluating rifles and ammo as there were fathers and sons at the range... And they all seem to work just fine. But something felt off. How can so many different processes result in the same results? I hesitantly realized that the old ways might actually be based on belief and faith. It was devastating to also realize that an overwhelming majority of internet content was selling snake oil to reinforce those beliefs and faith.
+It doesn't take long to realize that there are as many different ways of evaluating rifles and ammo as there were fathers and sons at the range... And they all seem to work just fine.  Forum filled with hundreds if not thousands of accounts of inherated process that "just worked".  But something felt off. How can so many different processes have the results? I hesitantly realized that the old ways might actually be based on belief and faith.  It was devastating to also realize that an overwhelming majority of internet content was selling snake oil to reinforce those beliefs and faith.  This industry is one step away from selling magic crystals to help alligh your rifles chi and copper socks to stop distortions in your humor's harmonics.  The internet is full of people either trying to sell you nonsense or people trying to justify having bought into the nonsense.  Some truely belive their producting is working and some are just lying.  A video of a three shot group on the internet is as usefull as a video of a hole-in-one in a golf tournament.  That golfer might have only taken a handfull of swings that day.  It doesnt mean that club can now be sold as a hole-in-one club          
 
 ## The proof is in the LLN
 According to the Merriam-Webster dictionary, the Law of Large Numbers is "a theorem in mathematical statistics: the probability that the absolute value of the difference between the mean of a population sample and the mean of the population from which it is drawn is greater than an arbitrarily small amount approaches zero as the size of the sample approaches infinity."
@@ -38,13 +38,22 @@ If you read the above and it makes perfect sense, congratulations; you do not ne
 
 A more jargon-free definition is provided by Wikipedia. To quote Wikipedia, "The law of large numbers is a mathematical law that states that the average of the results obtained from a large number of independent random samples converges to the true value, if it exists."
 
-If someone flips a coin 3 times and it lands heads-up three times, you instinctively know there is not enough info to prove to you that the coin will always land heads up. No one would pay a premium for that coin. We all instinctively know that that coin isn't any better at landing heads-up than any other coin. Landing a coin heads up 3 times doesn't make it a heads-up coin any more than printing a sub-MOA 3-shot group makes a rifle a sub-MOA rifle. How many coin tosses does your instinct tell you to take before you start to believe the coin is different from the average? Ten tosses? Fifty tosses? A thousand tosses? For whatever reason, humans seem to be better at detecting bad sample rates in simple systems but then easily accept bad sample rates in complex systems. The good news is a lot of really rational people figured out the need to remove the human bias from the process. When a slight human bias is the difference between winning a war or not, or launching a successful product or not, these entities have successfully resorted to LLN.
+If someone flips a coin 3 times and it lands heads-up three times, you instinctively know there is not enough info to prove to you that the coin will always land heads up. No one would pay a premium for that coin. We all instinctively know that that coin isn't any better at landing heads-up than any other coin. Landing a coin heads up 3 times doesn't make it a heads-up coin any more than printing a sub-MOA 3-shot group makes a rifle a sub-MOA rifle. How many coin tosses does your instinct tell you to take before you start to believe the coin is different from the average? Ten tosses? Fifty tosses? A thousand tosses? For whatever reason, humans seem to be better at detecting bad sample rates in simple systems but then easily accept bad sample rates in complex systems. The good news is a lot of really rational people figured out the need to remove the human bias from the process. When a slight human bias is the difference between winning a war or not, or launching a successful product or not, these entities have successfully resorted to LLN.  One random taste test for a new product is less usefull that 50 taste tests.  I partecepent in a drug trial is less usefull than 5000 partecipents.  
+
+## Data is king... a better system
+Use every peice of data.  Every shot not recorded is wasted data.
 
 ### Group size is less useful.
-Stop basing your system off group size (extreme spread). If you care about precision, compare each impact from every other impact. Each piece of data added (increasing sample size) makes your data as a whole more accurate. You are paying for the ammo; the least you can do is log every shot. Record the distance from Point of Aim and muzzle velocity (if you have a chronograph).
+Stop basing your system enterly off group size (extreme spread).  Each piece of data added (increasing sample size) makes your data as a whole more accurate. You are paying for the ammo; the least you can do is log every shot. Record the distance from Point of Aim (x and y) and muzzle velocity (if you have a chronograph).  Extreme Spread tells you how bad the two worst shots were.  Small group sizes limits the chance of a higher extreme spread.  Ignoring "fliers" is intruducing personal bias to the system.  Combine all this and its a receipe for deceit.     
 
-## Make a baseline
+### Make a baseline
 In its most general sense, a baseline is a starting point or a reference point against which future measurements, observations, or comparisons are made. It represents the initial state or condition before a change, intervention, or experiment is introduced.
+
+Shoot in an enviroment with the least abount of variables.  Do your best to eleminate variables you can and to control the variables you cant.  Best case is somthing like bags, on a bench, in an indoor range.  Better would be a shooting fixture.  I dont have access to a shooting fixture, and I dont have access to a bench.  I do have access to an indoor range.  Im not physically able to shoot prone for more than a few minutes.  The baseline used in this guide was collect from an indoor range, with a forend bag and a shoulder support rear, with me sitting on a bar stool.       
+
+Log the x and y distance of every shot from the point of aim.  I design targets in paint and print them with my office printer.  I use a triangle to create an infintly small point of aim and I have my elevation and windgage adjusted so im putting holes away from the point of aim.  I wait until i get home to use a cheap pair of calipers to mesure the distance from point of aim.  I record everything in millimeters just so everything is in whole numbers.  I log everything into a spreadsheet.  I also find it easier to convert to mrads.
+
+
 
 Check for normality with Shapiro-Wilk test.  The Shapiro-Wilk is a way to check if a set of data is likely to have come from a normal distribution (the bell curve). It gives you a score (W) and a p-value. The formula to calculate W is (Σ aᵢ * xᵢ)² / Σ (xᵢ - x̄)².  If the p-value is low (usually below 0.05), it suggests your data is probably not normally distributed. Shapiro-Wilk is commonly used in statistics to make sure data meets certain assumptions before using other tests.  Expect to collect around 20 impacts.  30 is better.  50 is about the max you will ever need.  In my experiance I dont often see a p>0.05 until around 20 shots.  Its so commmon that I just assume I will be starting at 20 and I make my targets accordingly.  Dont skip the "flyers".  There is a process to account for a outliers.    
 
