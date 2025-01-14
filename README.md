@@ -12,15 +12,15 @@ Most mid-tier rifles with mid-tier optics running mid-tier ammunition will outpe
 For this guide, "Precision Shooting" will be defined as the intentional discharge of a firearm with a high degree of accuracy. Two major shooting disciplines include:
 
 *   **Hunting:** In this context, precision shooting enables the hunter to evaluate their system to determine if they can ethically harvest game.
-*   **Competition:** Precision shooting in competitive settings typically involves organized events where participants aim (pun intended) to achieve the highest possible scores by shooting targets from various distances and positions.
-
+*   **Competition:** Precision shooting in competitive settings typically involves organized events where participants aim (pun intended) to achieve the highest possible scores by shooting targets from various distances and positions. Most competitions also include a time element.
+  
 Both disciplines require proficiencies such as calculating the effects of distance, understanding environmental (weather) conditions, and executing proper shooting techniques.
 
 Other disciplines include military and law enforcement. These are outside the scope of this guide. The focus will primarily be on competition shooting and applying those concepts, where applicable, to improve hunting proficiencies.
 
 ## Budget
 
-Shooting is expensive, and it seems to be getting more expensive every year. Following this guide will not be cheap. One of the many goals is to prevent the waste of time and materials. It will feel more expensive upfront (because it will be). Every piece of data collected early will make testing/troubleshooting less expensive in the future.
+Shooting is expensive, and it seems to be getting more expensive every year. Following this guide will not be cheap. One of the many goals is to prevent the waste of time and materials. It will feel more expensive upfront (because it will be).  The first step in collecting data is pulling the trigger.  Every piece of data collected early will make testing/troubleshooting less expensive in the future.
 
 ## Skip the Filler...
 
