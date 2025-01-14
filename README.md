@@ -3,6 +3,10 @@ Demystifying Statistical Analysis of Shooting
 
 The purpose of this guide is to evaluate repeatable concepts in precision shooting.
 
+## BLOT (Bottom Line On Top)
+
+Most mid-tier rifles with mid-tier optics running mid-tier ammunition will outperform most shooters. More than a handful of "budget" rifle brands will do the same. There is no incantation you can say over a bag rest or magical rune to carve into the turret ring to make precision shooting "easy." Outshooting a store-bought rifle is hard, and nothing is changing that. Anyone telling you differently is selling something.  
+
 ## What is "Precision Shooting"?
 
 For this guide, "Precision Shooting" will be defined as the intentional discharge of a firearm with a high degree of accuracy. Two major shooting disciplines include:
@@ -21,10 +25,6 @@ Shooting is expensive, and it seems to be getting more expensive every year. Fol
 ## Skip the Filler...
 
 This guide assumes that the reader knows the basics of firearms and ammunition. The temptation to fill the first 70 pages with definitions of trigger shoes and black powder burn rates will be resisted. That is what the index is for.
-
-## BLOT (Bottom Line On Top)
-
-Most mid-tier rifles with mid-tier optics running mid-tier ammunition will outperform most shooters. More than a handful of "budget" rifle brands will do the same. There is no incantation you can say over a bag rest or magical rune to carve into the turret ring to make precision shooting "easy." Outshooting a store-bought rifle is hard, and nothing is changing that. Anyone telling you differently is selling something.  
 
 ## The Old Ways
 
