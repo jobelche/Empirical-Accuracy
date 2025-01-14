@@ -24,9 +24,7 @@ This guide assumes that the reader knows the basics of firearms and ammunition. 
 
 ## BLOT (Bottom Line On Top)
 
-You don't need to do anything extraordinary to acquire competition-quality hardware.
-
-Most mid-tier rifles with mid-tier optics running mid-tier ammunition will outperform most shooters. More than a handful of "budget" rifle brands will do the same. There is no incantation you can say over a bag rest or magical rune to carve into the turret ring to make precision shooting "easy." Outshooting a store-bought rifle is hard, and nothing is changing that. Anyone telling you differently is selling something.
+Most mid-tier rifles with mid-tier optics running mid-tier ammunition will outperform most shooters. More than a handful of "budget" rifle brands will do the same. There is no incantation you can say over a bag rest or magical rune to carve into the turret ring to make precision shooting "easy." Outshooting a store-bought rifle is hard, and nothing is changing that. Anyone telling you differently is selling something.  
 
 ## The Old Ways
 
