@@ -54,7 +54,7 @@ In its most general sense, a baseline is a starting point or a reference point a
 
 Shoot in an environment with the fewest variables. Do your best to eliminate variables you can and to control the variables you can't. A good scenario is something like bags on a bench in an indoor range. Better would be a shooting fixture. I don't have access to a shooting fixture, and I don't have access to a bench. I do have access to an indoor range. I'm not physically able to shoot prone for more than a few minutes. The baseline used in this guide was collected from an indoor range, with a forend bag and a shoulder support rear, with me sitting on a bar stool.  
 
-Log the x and y distance of every shot from the point of aim. I design targets in Paint and print them with my office printer. I use a triangle to create an infinitely small point of aim, and I have my elevation and windage adjusted so I'm putting holes away from the point of aim. I wait until I get home to use a cheap pair of calipers to measure the distance from the point of aim. I record everything in millimeters so everything is in whole numbers. I also find it easier to convert to MRADs with whole numbers. I log everything into a spreadsheet.
+Log the x and y distance of every shot from the point of aim. I design targets in Paint and print them with my office printer. I use a triangle to create an infinitely small point of aim, and I have my elevation and windage adjusted so I'm putting holes away from the point of aim. I wait until I get home to use a cheap pair of calipers to measure the distance from the point of aim. I record everything in millimeters so everything is in whole numbers. I also find it easier to convert to MRADs with whole numbers. I log everything into a spreadsheet.  A sharpy, paper-plates and a ruler will work just a well.  I use a office printer becuse I have one.  Its not a requirment.  
 
 ### How Much Data is Enough
 
@@ -62,7 +62,11 @@ Check for normality with the Shapiro-Wilk test. The Shapiro-Wilk test is a way t
 
 ### Extreme Spread: Group Size is Least Useful
 
-Don't base your system entirely on group size (extreme spread). Each piece of data added (increasing sample size) makes your data as a whole more accurate. You are paying for the ammo; the least you can do is log every shot. Record the distance from the point of aim (x and y) and muzzle velocity (if you have a chronograph). Extreme spread tells you how bad the two worst shots were. Small group sizes limit the chance of a higher extreme spread. Ignoring "fliers" is introducing personal bias to the system. Combine all this, and it's a recipe for deceit.
+Don't base your system entirely on group size (extreme spread). Extreme spread tells you how bad the two worst shots were. Small group sizes limit the chance of a higher extreme spread. Ignoring "fliers" is introducing personal bias to the system. Combine all this, and it's a recipe for self deceit.  Each piece of data added (increasing sample size) makes your data as a whole more accurate. You are paying for the ammo; the least you can do is log every shot. Record the distance from the point of aim (x and y) and muzzle velocity (if you have a chronograph).  Dont get too hung up on the chronograph.  Muzzle verlocity is a nice to have, not a got to have.  Its basically irrelavant until you are pushing out beyond 500 yards.  Until you are shoting ELD the muzzle velocity is basically an indicatory of consistency.
+
+But!  Extrem spread and small shot groups can be very usefull  in determining the health of your system.  If you bought a $7k sub 1/2 MOA rifle and your first 3 shots have an extreme spread of 6 inches that is a indicator that your system is suffereing catastrific failure.  Insecure optics, faulty ammo, defective barrel... etc.  You obviously dont need to print 20 shoots if you spot a problem at three.
+
+### 
 
 ### Mean Radius is More Useful
 
