@@ -1,7 +1,7 @@
 # Empirical Accuracy
 Demystifying Statistical Analysis of Shooting
 
-The purpose of this guide is to evaluate repeatable concepts in precision shooting.
+The purpose of this test is to evaluate repeatable concepts in precision shooting.
 
 ## BLOT (Bottom Line On Top)
 
