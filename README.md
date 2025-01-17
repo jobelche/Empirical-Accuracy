@@ -20,7 +20,7 @@ Other disciplines include military and law enforcement. These are outside the sc
 
 ## Budget
 
-Shooting is expensive, and it seems to be getting more expensive every year. Following this guide will not be cheap. One of the many goals is to prevent the waste of time and materials. It will feel more expensive upfront (because it will be).  The first step in collecting data is pulling the trigger.  Every piece of data collected early will make testing/troubleshooting less expensive in the future.
+Shooting is expensive, and it seems to be getting more expensive every year. Following this guide will not be cheap. One of the many goals is to prevent the waste of time and materials. It will feel more expensive upfront (because it will be).  The first step in collecting data is pulling the trigger.  Every piece of data collected early will make testing/troubleshooting less expensive in the future.  
 
 ## Skip the Filler...
 
