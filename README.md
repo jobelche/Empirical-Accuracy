@@ -9,7 +9,7 @@ Most mid-tier rifles with mid-tier optics running mid-tier ammunition will outpe
 
 ## What is "Precision Shooting"?
 
-For this guide, "Precision Shooting" will be defined as the intentional discharge of a firearm with a high degree of accuracy. Two major shooting disciplines include:
+For this guide, "Precision Shooting" will be defined as the intentional discharge of a firearm with a high degree of consistency. Two major shooting disciplines include:
 
 *   **Hunting:** In this context, precision shooting enables the hunter to evaluate their system to determine if they can ethically harvest game.
 *   **Competition:** Precision shooting in competitive settings typically involves organized events where participants aim (pun intended) to achieve the highest possible scores by shooting targets from various distances and positions. Most competitions also include a time element.
