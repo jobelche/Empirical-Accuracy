@@ -5,7 +5,7 @@ The purpose of this text is to establish repeatable testing concepts for precisi
 
 ## BLUF (Bottom Line Up Front)
 
-Most mid-tier rifles with mid-tier optics running mid-tier ammunition will outperform most shooters. More than a handful of "budget" rifle brands will do the same. There is no incantation you can say over a bag rest or magical rune to carve into the turret ring to make precision shooting "easy." Outshooting a store-bought rifle is hard, and nothing is changing that. Anyone telling you differently is selling something.  
+Most mid-tier rifles with mid-tier optics running mid-tier ammunition will outperform most shooters. More than a handful of "budget" rifle brands will do the same. There is no incantation you can say over a bag rest or magical rune to carve into the turret ring to make precision shooting "easy." Outshooting a store-bought rifle is expensive and hard, and nothing is changing that. Anyone telling you differently is selling something.  
 
 ## What is "Precision Shooting"?
 
