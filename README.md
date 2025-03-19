@@ -28,7 +28,7 @@ This guide assumes that the reader knows the basics of firearms and ammunition. 
 
 ## The Old Ways
 
-My first scoped rifle was sighted in using three-shot groups. I was instructed by my father to fire three shots before adjusting the scope. I did as instructed, and with a little less than half a box of .30-06 Core-Lokt remaining, he and I were both satisfied that the rifle was "sighted in." For most of my life afterward, I evaluated rifles and ammo based on three-shot samples. Why wouldn't I? Countless game have been harvested with rifles sighted in based on three-shot samples. It is simple, cheap, and, more importantly, it was good enough!  
+My first scoped rifle was sighted in using three-shot groups. I was instructed by my father to fire three shots before adjusting the scope. I did as instructed, and with a little more than half a box of .30-06 Core-Lokt remaining, he and I were both satisfied that the rifle was "sighted in." For most of my life afterward, I evaluated rifles and ammo based on three-shot samples. Why wouldn't I? Countless game have been harvested with rifles sighted in based on three-shot samples. It is simple, cheap, and, more importantly, it was good enough!  
 
 ## Then the Internet...
 
