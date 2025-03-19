@@ -97,16 +97,19 @@ I draw targets in the equilivant of MSPaint and print them with my office printe
 
 Assume 20 shots.  These equations seem to come into high levels of realability for shooting percision at about 20 shoots as data points, really get locked it at 30, seem to never really change after about 50.  There are "tests" that are used to determin how well your data set will work.  This is called checking for normality.  This is a new level of complications that I dont expect a normal user to bother with but is included as an option of the website.  The check for normality is with the Shapiro-Wilk test. The Shapiro-Wilk test is a way to check if a set of data is likely to have come from a normal distribution (the bell curve). It gives you a score (W) and a p-value. The formula to calculate W is (Σ aᵢ * xᵢ)² / Σ (xᵢ - x̄)². If the p-value is low (usually below 0.05), it suggests your data is probably not normally distributed. Shapiro-Wilk is commonly used in statistics to ensure data meets certain assumptions before using other tests. Expect to collect around 20 impacts. Thirty is better. Fifty is about the maximum you will ever need. In my experience, I don't often see a p > 0.05 until around 20 shots. It's so common that I just assume I will be starting at 20, and I make my targets accordingly. Don't skip the "flyers." There is a process to account for outliers.  Record the distance from the point of aim (x and y) and muzzle velocity (if you have a chronograph).  Dont get too hung up on the chronograph.  Muzzle verlocity is a nice to have, not a got to have.  Its basically irrelavant until you are pushing out beyond 500 yards.  Until you are shoting ELD the muzzle velocity is basically an indicatory of consistency.
 
-Beyond the hardware... PPPP
+### Beyond the hardware... PPPP
 Position
 Picture
 Pull
 Practice
 
-TODO: Add examples of ladder targets and a website with formulas. ARA unlimited class target.
-
-Circular Error Probable (CEP): A measure of dispersion
-
-Horizontal and Vertical Variances: Measures of dispersion
-
-Mean Radius (MR): A measure of dispersion
+TODO:
+Ladder Targets: Explain what ladder targets are and how they are used in load development.
+Website with Formulas: Ensure the website is reliable and the formulas are clearly presented.
+ARA Unlimited Class Target: Explain what this is, why it's relevant, how to find one.
+Circular Error Probable (CEP): Provide a clear definition and explain how it relates to other measures of dispersion.
+Horizontal and Vertical Variances: Define these terms and explain how they can be used to analyze shot patterns.
+Add a section on equipment: Briefly discuss the types of equipment used in precision shooting (rifles, optics, ammunition, rests, etc.) and how they can affect accuracy.
+Add a section on environmental factors: Explain how wind, temperature, humidity, and other environmental factors can affect shot placement and how to account for them.
+Add a section on shooting techniques: Discuss the fundamentals of good shooting technique (e.g., stance, grip, trigger control, breathing) and how they contribute to accuracy.
+Consider adding a glossary of terms.
