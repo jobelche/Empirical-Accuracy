@@ -32,7 +32,7 @@ My first scoped rifle was sighted in using three-shot groups. I was instructed b
 
 ## Then the Internet...
 
-It doesn't take long to realize that there are as many different ways of evaluating rifles and ammo as there were fathers and sons at the range... and they all seem to work just fine.  The change came when good enough wasnt good enough... only MOA was good enough.  Forums are filled with thousands, if not millions, of accounts of inherited processes that took a good enough riles to a SUB MOA rifle.  But something felt off. How can so many different processes have the same exacting results? I hesitantly realized that the old ways might be good enough to prove a rile "good enough" but can in no way prove a rifle SUB MOA.  It was devastating to also realize that an overwhelming majority of internet content was selling snake oil to reinforce using the old ways to prove a SUB MOA rifle. This industry is one step away from selling magic crystals to help align your rifle's chi and copper socks to stop distortions in your humor's harmonics. The internet is full of people either trying to sell you nonsense or trying to justify having bought into the nonsense. Some truly believe their product is working, and some are just lying.  The even have video proof.  A video of a 1/4 MOA three-shot group on the internet is as useful as a video of a hole-in-one at a driving range.
+It doesn't take long to realize that there are as many different ways of evaluating rifles and ammo as there were fathers and sons at the range... and they all seem to work just fine.  The change came when good enough wasnt good enough... only MOA was good enough.  Forums are filled with thousands, if not millions, of accounts of inherited processes that took a good enough riles to a SUB MOA rifle.  But something felt off. How can so many different processes have the same exacting results? I hesitantly realized that the old ways might be good enough to prove a rile "good enough" but can in no way prove a rifle SUB MOA.  It was devastating to also realize that an overwhelming majority of internet content was selling snake oil to reinforce using the old ways to prove a SUB MOA rifle. This industry is one step away from selling magic crystals to help align your rifle's chi and copper socks to stop distortions in your humor's harmonics. The internet is full of people either trying to sell you nonsense or trying to justify having bought into the nonsense. Some truly believe their product is working, and some are just lying.  They even have video proof.  A video of a 1/4 MOA three-shot group on the internet is as useful as a video of a hole-in-one at a driving range.
 
 ## The Proof is in the LLN
 
@@ -42,7 +42,9 @@ If you read the above and it makes perfect sense, congratulations; you do not ne
 
 A more jargon-free definition is provided by Wikipedia. To quote Wikipedia, "The law of large numbers is a mathematical law that states that the average of the results obtained from a large number of independent random samples converges to the true value, if it exists."
 
-If someone flips a coin three times and it lands heads-up three times, you instinctively know there is not enough information to prove that the coin will always land heads up. No one would pay a premium for that coin. We all instinctively know the coin isn't any better at landing heads-up than any other coin. Landing a coin heads up three times doesn't make it a "heads-up coin" any more than printing a sub-MOA three-shot group makes a rifle a sub-MOA rifle. How many coin tosses does your instinct tell you to take before you start to believe the coin is different from the average? Ten tosses? Fifty tosses? A thousand tosses? For whatever reason, humans seem to be better at detecting bad sample rates in simple systems but then easily accept bad sample rates in complex systems. The good news is that many rational minded people figured out processes to remove human bias from the process. When a slight human bias is the difference between choosing the right player in a draft or not, or launching a successful add compain or not, these people have successfully resorted to the LLN. One random taste test for a new product is less useful than 50 taste tests. One participant in a drug trial is less useful than 5,000 participants.
+LLN converges on the truth if it exists.  
+
+If someone flips a coin three times and it lands heads-up three times, you instinctively know there is not enough information to prove that the coin will always land heads up.  Is threee flips enough to converge on the truth?  No one would pay a premium for that coin as  aheads only coin.  We all instinctively know the coin isn't any better at landing heads-up than any other coin. Landing a coin heads up three times doesn't make it a "heads-up coin" any more than printing a sub-MOA three-shot group makes a rifle a sub-MOA rifle. How many coin tosses does your instinct tell you to take before you start to believe you are converging on the truth of the coin might be different from the average? Ten tosses? Fifty tosses? A thousand tosses? For whatever reason, humans seem to be better at detecting bad sample rates in simple systems but then easily accept bad sample rates in complex systems. The good news is that many rational minded people figured out processes to remove human bias from the process. When a slight human bias is the difference between choosing the best player in a draft or not, or launching a successful advertising compain or not, these people have successfully resorted to the LLN. One random taste test for a new product is llikely to have converged on the truth than 50 taste tests. One participant in a drug trial is less useful than 5,000 participants.
 
 ## Data is King... A Better System
 
@@ -51,13 +53,13 @@ Use every piece of data. Every shot not recorded is wasted data.  The end goal i
 ##  Lets define some terms
 
 ### Mean
-Mean is just a fance word for the average of a set of numbers.  In this document mean will usually indicate a distance but mean coupld also indacte an avarge musszle volicity etc.  The mean of the x-coordinates and the mean of the y-coordinates give you the Mean Point of Impact for a shot group.  
+Mean is just a fancy word for the average of a set of numbers.  In this document mean will usually indicate a distance but mean coupld also indacte an avarge for muzzle volicity etc.  The mean of the x-coordinates and the mean of the y-coordinates give you the Mean Point of Impact for a shot group.  
 
 ### Standard Deviation
-A measure of how spread out the numbers are.  A smaller standard deviation means the data points are more tightly clustered.  A small SD is an indicator of consistancy.      
+SD is measure of how spread out the numbers are.  A smaller SD means the data points are more tightly clustered.  A small SD is an indicator of consistancy.      
 
 ### Extreme Spread
-Extreme spread (ES) indicates the difference between the highest and lowest values in a dataset.  In this context it would indicate the distance between the centers of the two most distant holes in the group of shots on the targe.  Aka group size.
+Extreme spread (ES) indicates the difference between the highest and lowest values in a dataset.  In this context it would indicate the distance between the centers of the two most distant holes in the group of shots on the targe.  Aka group size.  
 
 ### Mean Radius 
 For this guide, the mean radius is the average distance of all impacts from the geometric center of the combined impacts.  Opposed to Extreme Spread the Mean Radious calculation takes into account every point of impact.  This matters when evaulating small changes in a system.
@@ -95,27 +97,15 @@ I draw targets in the equilivant of MSPaint and print them with my office printe
 
 Assume 20 shots.  These equations seem to come into high levels of realability for shooting percision at about 20 shoots as data points, really get locked it at 30, seem to never really change after about 50.  There are "tests" that are used to determin how well your data set will work.  This is called checking for normality.  This is a new level of complications that I dont expect a normal user to bother with but is included as an option of the website.  The check for normality is with the Shapiro-Wilk test. The Shapiro-Wilk test is a way to check if a set of data is likely to have come from a normal distribution (the bell curve). It gives you a score (W) and a p-value. The formula to calculate W is (Σ aᵢ * xᵢ)² / Σ (xᵢ - x̄)². If the p-value is low (usually below 0.05), it suggests your data is probably not normally distributed. Shapiro-Wilk is commonly used in statistics to ensure data meets certain assumptions before using other tests. Expect to collect around 20 impacts. Thirty is better. Fifty is about the maximum you will ever need. In my experience, I don't often see a p > 0.05 until around 20 shots. It's so common that I just assume I will be starting at 20, and I make my targets accordingly. Don't skip the "flyers." There is a process to account for outliers.  Record the distance from the point of aim (x and y) and muzzle velocity (if you have a chronograph).  Dont get too hung up on the chronograph.  Muzzle verlocity is a nice to have, not a got to have.  Its basically irrelavant until you are pushing out beyond 500 yards.  Until you are shoting ELD the muzzle velocity is basically an indicatory of consistency.
 
-
-### Work flow.
-
-
-
-
-
 Beyond the hardware... PPPP
 Position
 Picture
 Pull
 Practice
 
-
-
-
-TODO: Add examples of ladder targets and an Excel spreadsheet with formulas. ARA unlimited class target.
+TODO: Add examples of ladder targets and a website with formulas. ARA unlimited class target.
 
 Circular Error Probable (CEP): A measure of dispersion
-
-Extreme Spread (ES): A measure of dispersion
 
 Horizontal and Vertical Variances: Measures of dispersion
 
