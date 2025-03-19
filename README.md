@@ -48,42 +48,31 @@ If someone flips a coin three times and it lands heads-up three times, you insti
 
 Use every piece of data. Every shot not recorded is wasted data.  The end goal is to have a working database of shots for stastical analysys.
 
-### Make a Baseline
+##  Lets define some terms
 
-In its most general sense, a baseline is a starting point or a reference point against which future measurements, observations, or comparisons are made. It represents the initial state or condition before a change, intervention, or experiment is introduced.
-
-Shoot in an environment with the fewest variables. Do your best to eliminate variables you can and to control the variables you can't. A good scenario is something like bags on a bench at an indoor range. Better would be a shooting fixture. I don't have access to a shooting fixture, and I don't have access to a bench. I do have access to an indoor range. I'm not physically able to shoot prone for more than a few minutes. The baseline used in this guide was collected from an indoor range, with a forend bag and a shoulder support rear, with me sitting on a bar stool.  Whenever your baseline changes make note.    
-
-Log the x and y distance of every shot from the point of aim.  The log the distance left or right of your POI as x and the distance up or down from your POI as y.  At this point there is no concern for accuracy.  In fact the process is much easier if all your shots are always above and to the right of your point of aim.  This prevents you from having to deal with negatives in your data set.  Additionally recording the impacts in millimeters is perfectly accurate and will illimante fractions(recording in mm is equilicant to recording in 24ths of an inch).  Following the recomdations will produce a database of positive integers.  Of course you are free to adapt any method you wish but for this text all the data wil lbe positive integers in mm.  I also find it easier to convert to MRADS.  IMHO it is very easy to convert to MOA with metric units.            
-
-I draw targets in the equilivant of MSPaint and print them with my office printer. For the "bullseye", I use a triangle.  The tip of the triangle is an infinitely small point of aim.  Its much easir to measue the distance from the tip of an angle then, say, the center of a circle.  Becuse I actually save the targets for later reference I limit the damage to the target and stick to one shot per bullseye.  Its of no use to turn a target into confette and then try to pull data from it.  Also I dont worry about collecting the specifics until I get home.  At home I can take my time using a cheap pair of vaneer calipers to measure and record the distance from the point of aim.  A sharpy, paper-plates and a ruler will work just a well.  Calipers and printers are not a requirment.  The end goal is to lay down shots with a minimum of variables in a way individual shots can be easly recorded for later use.  
-
-### How Much Data is Enough
-
-Check for normality with the Shapiro-Wilk test. The Shapiro-Wilk test is a way to check if a set of data is likely to have come from a normal distribution (the bell curve). It gives you a score (W) and a p-value. The formula to calculate W is (Σ aᵢ * xᵢ)² / Σ (xᵢ - x̄)². If the p-value is low (usually below 0.05), it suggests your data is probably not normally distributed. Shapiro-Wilk is commonly used in statistics to ensure data meets certain assumptions before using other tests. Expect to collect around 20 impacts. Thirty is better. Fifty is about the maximum you will ever need. In my experience, I don't often see a p > 0.05 until around 20 shots. It's so common that I just assume I will be starting at 20, and I make my targets accordingly. Don't skip the "flyers." There is a process to account for outliers.  Record the distance from the point of aim (x and y) and muzzle velocity (if you have a chronograph).  Dont get too hung up on the chronograph.  Muzzle verlocity is a nice to have, not a got to have.  Its basically irrelavant until you are pushing out beyond 500 yards.  Until you are shoting ELD the muzzle velocity is basically an indicatory of consistency.
-
-###  Lets define some terms
-
-## Mean
-
+### Mean
 Mean is just a fance word for the average of a set of numbers.  In this document mean will usually indicate a distance but mean coupld also indacte an avarge musszle volicity etc.  The mean of the x-coordinates and the mean of the y-coordinates give you the Mean Point of Impact for a shot group.  
 
-## Standard Deviation
-
+### Standard Deviation
 A measure of how spread out the numbers are.  A smaller standard deviation means the data points are more tightly clustered.  A small SD is an indicator of consistancy.      
 
-## Extreme Spread
+### Extreme Spread
 Extreme spread (ES) indicates the difference between the highest and lowest values in a dataset.  In this context it would indicate the distance between the centers of the two most distant holes in the group of shots on the targe.  Aka group size.
 
-### Group Size is Least Useful
+### Mean Radius 
+For this guide, the mean radius is the average distance of all impacts from the geometric center of the combined impacts.  Opposed to Extreme Spread the Mean Radious calculation takes into account every point of impact.  This matters when evaulating small changes in a system.
 
+### Normal Distribution
+Consider a normal distribution as a distribution of date points that form a graph that appears as a "bell curve".  Showing that data points near the mean are more frequent than data far from the mean.  
+
+## Group Size is Least Useful
 Don't base your system entirely on group size. Extreme Spread only tells you how bad the two worst shots were.  This leads people to bias thier data by self limiting to small group sizes and lower their chance of a larger extreme spread.  This is perfect if you are selling a gadget but not very usefull if you are trying to actually test how usefull that gadget is.  Ignoring "fliers" is also a way to introducing personal bias to the system.  Its way easier on the ego to ignore the "flyer" in a group than to have to come to the realization that the system is not sub-moa.  Combine all this, and it's a perfect recipe for self deceit.  Each piece of data added (increasing sample size) makes your data as a whole more usefull. You are paying for the ammo; the least you can do is log every shot.   
 
 But!  Extrem spread and small shot groups have a use.  ES is very usefull in determining the health of your system.  If you bought a $7k sub 1/2 MOA rifle and your first 3 shots have an extreme spread of 6 inches that is a indicator that your system is suffereing catastrific failure.  Insecure optics, faulty ammo, defective barrel... etc.  You obviously dont need to print 20 shoots if you spot a problem at three.
 
-### Mean Radius is More Useful
+## Mean Radius is More Useful
 
-For this guide, the mean radius is the average distance of all impacts from the geometric center of the combined impacts. This metric provides a more comprehensive measure of precision (or lack thereof) than simply measuring the distance between the two farthest shots (extreme spread). We care less about the two worst shots. We care more about how often you should be expecting the good shots.
+Mean Radious provides a more comprehensive measure of precision (or lack thereof) than simply measuring the distance between the two farthest shots (extreme spread). We care less about the two worst shots.   If for example you only record the ES/Group size.  You fire 3 times and record the ES as .98 inch.  You switch ammo and decide to fire 10 rounds also recording a ES of .98 inches.  Most people will instenctly understand that a 3 shot 1 inch group is not as good as a 10 shot 1 inch group.  But exactly how much better is it... or is it actually any better at all?  Using Mean Radious you can calculate the difference in percision between those 2 groups.  Any groups.  The caveot is that 3 shots or even 10 shots is not enough data for the equations to really kick in.  Its called the law of large numbers not the law of 3 numbers. 
 
 Compared to the "old ways," calculating the mean radius is much more difficult. The basic concept is determining the center of the group, measuring each printed shot from the center, then finding the mean of each shot printed. The formula to calculate the MR is as follows: √((x₂ - x₁)² + (y₂ - y₁)²) where (x₁, y₁) are the coordinates of the group center and (x₂, y₂) are the coordinates of the shot hole.
 
@@ -91,6 +80,21 @@ Don't let the equations turn you off from the process. Your phone has more compu
 
 Below is a link to a very simple webpage that can mark shots on a target and perform calculations.  Free to use!
 http://www.leproductionservice.com
+
+### Make a Baseline
+
+In its most general sense, a baseline is a starting point or a reference point against which future measurements, observations, or comparisons are made. It represents the initial state or condition before a change, intervention, or experiment is introduced.
+
+Shoot in an environment with the fewest variables. Do your best to eliminate variables you can and to control the variables you can't. A good scenario is something like bags on a bench at an indoor range. Better would be a shooting fixture. I don't have access to a shooting fixture, and I don't have access to a bench. I do have access to an indoor range. I'm not physically able to shoot prone for more than a few minutes, so i use a bag on the range ammpo self.  Not perfect but nothing ever is.  The data is this guid was was collected in this way.  Dont let good enough get in the way of perfiction.  
+
+Log the x and y distance of every shot from the point of aim.  Log the distance left or right of your POI as x and the distance up or down from your POI as y.  It is easier if your points of impacts are always above and to the right of your point of aim.  This prevents you from having to deal with negatives in your data set.  Additionally recording the impacts in millimeters is perfectly accurate and will illimante fractions(recording in mm is equilicant to recording in 24ths of an inch).  Following the recomdations will produce a database of positive integers.  Of course you are free to adapt any method you wish but for this text all the data wil lbe positive integers in mm.  I also find it easier to convert to MRADS.  IMHO it is very easy to convert to MOA with metric units.            
+
+I draw targets in the equilivant of MSPaint and print them with my office printer. For the "bullseye", I use a triangle.  The tip of the triangle is an infinitely small point of aim.  Its much easir to measue the distance from the tip of an angle then, say, the center of a circle.  Becuse I actually save the targets for later reference I limit the damage to a minimul number of shots per bullseye.  Its of no use to turn a target into confette and then try to pull data from it.  Also I dont worry about collecting the specifics until I get home.  At home I can take my time using a cheap pair of vaneer calipers to measure and record the distance from the point of aim.  A sharpy, paper-plates and a ruler will work just a well.  Calipers and printers are not a requirment.  The end goal is to lay down shots with a minimum of variables in a way individual shots can be easly recorded for later use.  
+
+### How Much Data is Enough
+
+Assume 20 shots.  These equations seem to come into high levels of realability for shooting percision at about 20 shoots as data points, really get locked it at 30, seem to never really change after about 50.  There are "tests" that are used to determin how well your data set will work.  This is called checking for normality.  This is a new level of complications that I dont expect a normal user to bother with but is included as an option of the website.  The check for normality is with the Shapiro-Wilk test. The Shapiro-Wilk test is a way to check if a set of data is likely to have come from a normal distribution (the bell curve). It gives you a score (W) and a p-value. The formula to calculate W is (Σ aᵢ * xᵢ)² / Σ (xᵢ - x̄)². If the p-value is low (usually below 0.05), it suggests your data is probably not normally distributed. Shapiro-Wilk is commonly used in statistics to ensure data meets certain assumptions before using other tests. Expect to collect around 20 impacts. Thirty is better. Fifty is about the maximum you will ever need. In my experience, I don't often see a p > 0.05 until around 20 shots. It's so common that I just assume I will be starting at 20, and I make my targets accordingly. Don't skip the "flyers." There is a process to account for outliers.  Record the distance from the point of aim (x and y) and muzzle velocity (if you have a chronograph).  Dont get too hung up on the chronograph.  Muzzle verlocity is a nice to have, not a got to have.  Its basically irrelavant until you are pushing out beyond 500 yards.  Until you are shoting ELD the muzzle velocity is basically an indicatory of consistency.
+
 
 ### Work flow.
 
