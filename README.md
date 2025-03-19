@@ -1,7 +1,7 @@
 # Empirical Accuracy
 Demystifying Statistical Analysis of Shooting
 
-The purpose of this text is to establish repeatable testing concepts for precision shooting.
+The purpose of this text is to establish repeatable testing concepts for precision shooting.  The targe audiance is anyone that has the skills to repeadly shoot a rifle with percision but are interested in exploring how to test if a change in the system is actually an improvment.  Such as testing reloaded ammo vs factory ammo.  Testing a upgrade from a factory stock to a custom percision chassis.  Even tesing misnor changes like a differnt lot number of your favorite reloading component.  
 
 ## BLUF (Bottom Line Up Front)
 
