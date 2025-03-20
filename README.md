@@ -1,26 +1,26 @@
 # Empirical Accuracy
 Demystifying Statistical Analysis of Shooting
 
-The purpose of this text is to establish repeatable testing concepts for precision shooting.  The target audience is anyone that has the skills to repeatedly shoot a rifle with precision but are interested in exploring how to test if a change in the system is actually an improvement.  Such as testing reloaded ammo vs factory ammo.  Testing a upgrade from a factory stock to a custom precision chassis.  Even testing minor changes like a different lot number of your favorite reloading component.  
+The purpose of this text is to establish repeatable testing concepts for precision shooting. The target audience is anyone that has the skills to repeatedly shoot a rifle system with precision but are interested in exploring how to test if a change in the system is actually an improvement. Such as testing reloaded ammo vs factory ammo. Testing an upgrade from a factory stock to a custom precision chassis. Even testing minor changes like a different lot number of your favorite reloading component.
 
 ## BLUF (Bottom Line Up Front)
 
-Most mid-tier rifles with mid-tier optics running mid-tier ammunition will outperform most shooters. More than a handful of "budget" rifle brands will do the same. There is no incantation you can say over a bag rest or magical rune to carve into the turret ring to make precision shooting "easy." Outshooting a store-bought rifle is expensive and hard, and nothing is changing that. Anyone telling you differently is selling something.  
+Most mid-tier rifle systems with mid-tier optics running mid-tier ammunition will outperform most shooters. More than a handful of "budget" rifle systems will do the same. There is no incantation you can say over a bag rest or magical rune to carve into the turret ring to make precision shooting "easy." Outshooting a store-bought rifle system is expensive and hard, and nothing is changing that. Anyone telling you differently is selling something.
 
 ## What is "Precision Shooting"?
 
-For this guide, "Precision Shooting" will be defined as the intentional discharge of a firearm with a high degree of consistency. Two major shooting disciplines include:
+For this guide, "Precision Shooting" will be defined as the intentional discharge of a firearm system with a high degree of consistency. Two major shooting disciplines include:
 
-*   **Hunting:** In this context, precision shooting enables the hunter to evaluate their system to determine if they can ethically harvest game.
-*   **Competition:** Precision shooting in competitive settings typically involves organized events where participants aim (pun intended) to achieve the highest possible scores by shooting targets from various distances and positions. Most competitions also include a time element.
-  
+* **Hunting:** In this context, precision shooting enables the hunter to evaluate their system to determine if they can ethically harvest game.
+* **Competition:** Precision shooting in competitive settings typically involves organized events where participants aim (pun intended) to achieve the highest possible scores by shooting targets from various distances and positions. Most competitions also include a time element.
+
 Both disciplines require proficiencies such as calculating the effects of distance, understanding environmental (weather) conditions, and executing proper shooting techniques.
 
 Other disciplines include military and law enforcement. These are outside the scope of this guide. The focus will primarily be on competition shooting and applying those concepts, where applicable, to improve hunting proficiencies.
 
 ## Budget
 
-Shooting is expensive, and it seems to be getting more expensive every year. Following this guide will not be cheap. One of the many goals is to prevent the waste of time and materials. It will feel more expensive upfront (because it will be).  The first step in collecting data is pulling the trigger.  Every piece of data collected early will make testing/troubleshooting less expensive in the future.  
+Shooting is expensive, and it seems to be getting more expensive every year. Following this guide will not be cheap. One of the many goals is to prevent the waste of time and materials. It will feel more expensive upfront (because it will be). The first step in collecting data is pulling the trigger. Every piece of data collected early will make testing/troubleshooting less expensive in the future.
 
 ## Skip the Filler...
 
@@ -28,52 +28,66 @@ This guide assumes that the reader knows the basics of firearms and ammunition. 
 
 ## The Old Ways
 
-My first scoped rifle was sighted in using three-shot groups. I was instructed by my father to fire three shots before adjusting the scope. I did as instructed, and with a little more than half a box of .30-06 Core-Lokt remaining, he and I were both satisfied that the rifle was "sighted in." For most of my life afterward, I evaluated rifles and ammo based on three-shot samples. Why wouldn't I? Countless game have been harvested with rifles sighted in based on three-shot samples. It is simple, cheap, and, more importantly, it was good enough!  
+My first scoped rifle system was sighted in using three-shot groups. I was instructed by my father to fire three shots before adjusting the scope. I did as instructed, and with a little more than half a box of .30-06 Core-Lokt remaining, he and I were both satisfied that the rifle system was "sighted in." For most of my life afterward, I evaluated rifle systems and ammo based on three-shot samples. Why wouldn't I? Countless game have been harvested with rifle systems sighted in based on three-shot samples. It is simple, cheap, and, more importantly, it was good enough!
 
 ## Then the Internet...
 
-It doesn't take long to realize that there are as many different ways of evaluating rifles and ammo as there were fathers and sons at the range... and they all seem to work just fine.  The change came when good enough wasnt good enough... only MOA was good enough.  Forums are filled with thousands, if not millions, of accounts of inherited processes that took a good enough riles to a SUB MOA rifle.  But something felt off. How can so many different processes have the same exacting results? I hesitantly realized that the old ways might be good enough to prove a rile "good enough" but can in no way prove a rifle SUB MOA.  It was devastating to also realize that an overwhelming majority of internet content was selling snake oil to reinforce using the old ways to prove a SUB MOA rifle. This industry is one step away from selling magic crystals to help align your rifle's chi and copper socks to stop distortions in your humor's harmonics. The internet is full of people either trying to sell you nonsense or trying to justify having bought into the nonsense. Some truly believe their product is working, and some are just lying.  They even have video proof.  A video of a 1/4 MOA three-shot group on the internet is as useful as a video of a hole-in-one at a driving range.
+It doesn't take long to realize that there are as many different ways of evaluating rifle systems and ammo as there were fathers and sons at the range... and they all seem to work just fine. The change came when good enough wasn't good enough... only MOA was good enough. Forums are filled with thousands, if not millions, of accounts of inherited processes that took a good enough rifle system to a SUB MOA rifle system. But something felt off. How can so many different processes have the same exacting results? I hesitantly realized that the old ways might be good enough to prove a rifle system "good enough" but can in no way prove a rifle system SUB MOA. It was devastating to also realize that an overwhelming majority of internet content was selling snake oil to reinforce using the old ways to prove a SUB MOA rifle system. This industry is one step away from selling magic crystals to help align your rifle system's chi and copper socks to stop distortions in your barrel harmonics. The internet is full of people either trying to sell you nonsense or trying to justify having bought into the nonsense. Some truly believe their product is working, and some are just lying. They even have video proof. A video of a 1/4 MOA three-shot group on the internet is as useful as a video of a hole-in-one at a driving range.
 
 ## The Proof is in the LLN
 
 According to the Merriam-Webster dictionary, the Law of Large Numbers is "the probability that the absolute value of the difference between the mean of a population sample and the mean of the population from which it is drawn is greater than an arbitrarily small amount approaches zero as the size of the sample approaches infinity."
 
-If you read the above and it makes perfect sense, congratulations; you do not need this guide. If you read that and thought, "WTF does this have to do with a rifle?" then you might be the target audience.
+If you read the above and it makes perfect sense, congratulations; you do not need this guide. If you read that and thought, "WTF does this have to do with a rifle system?" then you might be the target audience.
 
 A more jargon-free definition is provided by Wikipedia. To quote Wikipedia, "The law of large numbers is a mathematical law that states that the average of the results obtained from a large number of independent random samples converges to the true value, if it exists."
 
-LLN converges on the truth if it exists.  
+LLN converges on the truth if it exists.
 
-If someone flips a coin three times and it lands heads-up three times, you instinctively know there is not enough information to prove that the coin will always land heads up.  Is three flips enough to converge on the truth?  No one would pay a premium for that coin as a heads only coin.  We all instinctively know the coin isn't any better at landing heads-up than any other coin. Landing a coin heads up three times doesn't make it a "heads-up coin" any more than printing a sub-MOA three-shot group makes a rifle a sub-MOA rifle. How many coin tosses does your instinct tell you to take before you start to believe you are converging on the truth of the coin might be different from the average? Ten tosses? Fifty tosses? A thousand tosses? For whatever reason, humans seem to be better at detecting bad sample rates in simple systems but then easily accept bad sample rates in complex systems. The good news is that many rational minded people figured out processes to remove human bias from the process. When a slight human bias is the difference between choosing the best player in a draft or not, or launching a successful advertising compain or not, these people have successfully resorted to the LLN. One random taste test for a new product is llikely to have converged on the truth than 50 taste tests. One participant in a drug trial is less useful than 5,000 participants.
+If someone flips a coin three times and it lands heads-up three times, you instinctively know there is not enough information to prove that the coin will always land heads up. Is three flips enough to converge on the truth? No one would pay a premium for that coin as a heads only coin. We all instinctively know the coin isn't any better at landing heads-up than any other coin. Landing a coin heads up three times doesn't make it a "heads-up coin" any more than printing a sub-MOA three-shot group makes a rifle system a sub-MOA rifle system. How many coin tosses does your instinct tell you to take before you start to believe you are converging on the truth of the coin might be different from the average? Ten tosses? Fifty tosses? A thousand tosses? For whatever reason, humans seem to be better at detecting bad sample rates in simple systems but then easily accept bad sample rates in complex systems. The good news is that many rational minded people figured out processes to remove human bias from the process. When a slight human bias is the difference between choosing the best player in a draft or not, or launching a successful advertising campaign or not, these people have successfully resorted to the LLN. One random taste test for a new product is likely to have converged on the truth than 50 taste tests. One participant in a drug trial is less useful than 5,000 participants.
 
 ## Data is King... A Better System
 
-Use every piece of data. Every shot not recorded is wasted data.  The end goal is to have a working database of shots for statistical analysis.
+Use every piece of data. Every shot not recorded is wasted data. The end goal is to have a working database of impacts for statistical analysis.
 
-##  Lets define some terms
+## Let's define some terms
 
 ### Mean
-Mean is just a fancy word for the average of a set of numbers.  In this document mean will usually indicate a distance but mean could also indicate an average of muzzle velocity etc.  The mean of the x-coordinates and the mean of the y-coordinates give you the Mean Point of Impact for a shot group.  
+
+Mean is just a fancy word for the average of a set of data points. In this document, mean will usually indicate a distance but mean could also indicate an average of muzzle velocity etc. The mean of the x-coordinates and the mean of the y-coordinates give you the Mean Point of Impact for a shot group.
 
 ### Standard Deviation
-Standard Deviation is measure of how spread out the numbers are.  A smaller Standard Deviation means the data points are more tightly clustered.  A small Standard Deviation is an indicator of consistency.      
 
-### Extreme Spread
-Extreme Spread indicates the difference between the highest and lowest values in a dataset.  In this context it would indicate the distance between the centers of the two most distant holes in the group of shots on the target.  Aka group size.  
+Standard Deviation is a measure of how spread out the data points are. A smaller Standard Deviation means the data points are more tightly clustered. A small Standard Deviation is an indicator of consistency.
 
-### Mean Radius 
-For this guide, the Mean Radius is the average distance of all impacts from the geometric center of the combined impacts.  Opposed to Extreme Spread the Mean Radius calculation takes into account every point of impact.  This matters when evaluating small changes in a system.
+### Extreme Spread (ES)
+
+Extreme Spread (ES) indicates the difference between the highest and lowest values in a dataset. In this context, it would indicate the distance between the centers of the two most distant impacts in the group of shots on the target. Aka group size.
+
+### Mean Radius
+
+For this guide, the Mean Radius is the average distance of all impacts from the geometric center of the combined impacts. Opposed to Extreme Spread, the Mean Radius calculation takes into account every impact. This matters when evaluating small changes in a system.
 
 ### Sample Size
+
 Sample Size refers to the number of observations or individual data points included in a study or experiment. Essentially, it's how many items you're measuring or counting within your selected group.
 
 ### Normal Distribution
-Consider a Normal Distribution as a distribution of date points that form a graph that appears as a "bell curve".  Showing that data points near the mean are more frequent than data far from the mean.  
 
-## Group Size is Least Useful
+Consider a Normal Distribution as a distribution of data points that form a graph that appears as a "bell curve". Showing that data points near the mean are more frequent than data far from the mean.
+
+### MOA (Minute of Angle)
+
+MOA is an angular measurement. One MOA subtends approximately 1.047 inches at 100 yards. For practical purposes it is usually rounded to 1 inch at 100 yards.
+
+### MRAD (Milliradian)
+
+MRAD is also an angular measurement. One MRAD subtends approximately 3.6 inches at 100 yards, or 0.1 MRAD subtends approximately .36 inches at 100 yards.
+
+## Extreme Spread is Least Useful
 Don't base your system entirely on group size. Extreme Spread only tells you how bad the two worst shots were.  This leads people to bias their data by self limiting to small group sizes to lower their chance of a larger extreme spread.  This is perfect if you are selling a gadget but not very useful if you are trying to actually test how useful that gadget is.  Ignoring "fliers" is also a way to introducing personal bias to the system.  Its way easier on the ego to ignore the "flyer" in a group than to have to come to the realization that the system is not sub-moa.  Combine all this, and it's a perfect recipe for self deceit.  Each piece of data added (increasing sample size) makes your data as a whole more useful. You are paying for the ammo; the least you can do is log every shot.   
 
-But!  Extreme spread and small shot groups have a use.  ES is very useful in determining the health of your system.  If you bought a $7k sub 1/2 MOA rifle and your first 3 shots have an extreme spread of 6 inches that is a indicator that your system is suffering catastrophic failure.  Insecure optics, faulty ammo, defective barrel... etc.  You obviously don't need to print 20 shoots if you spot a problem at three.
+But!  Extreme spread and small shot groups have a use.  Extreme Spread is very useful in determining the health of your system.  If you bought a $7k sub 1/2 MOA rifle and your first 3 shots have an extreme spread of 6 inches that is a indicator that your system is suffering catastrophic failure.  Insecure optics, faulty ammo, defective barrel... etc.  You obviously don't need to print 20 shoots if you spot a problem at three.
 
 ## Mean Radius is More Useful
 
