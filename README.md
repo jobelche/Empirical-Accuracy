@@ -51,9 +51,57 @@ However, Extreme Spread is useful in determining the health of your system. If y
 
 Mean Radius provides a more comprehensive measure of precision than simply measuring the distance between the two farthest shots (extreme spread). We care less about the two worst shots. If, for example, you only record the ES/Group size. You fire 3 times and record the ES as .98 inch. You switch ammo and decide to fire 10 rounds also recording a ES of .98 inches. Most people will instantly understand that a 3 shot 1 inch group is not as good as a 10 shot 1 inch group. But exactly how much better is it... or is it actually any better at all? Using Mean Radius, you can actualize the difference in precision between those 2 groups. Any groups. The caveat is that 3 shots or even 10 shots is not enough data for the equations to really kick in. It's called the law of large numbers not the law of 3 numbers.
 
-Compared to the
+Compared to the "old ways," calculating the mean radius is much more difficult. The basic concept is determining the center of the group, measuring each printed shot from the center, then finding the mean of each shot printed. The formula to calculate the MR is as follows: √((x₂ - x₁)² + (y₂ - y₁)²) where (x₁, y₁) are the coordinates of the group center and (x₂, y₂) are the coordinates of the shot hole.
 
+Don't let the equations turn you off from the process. Your phone has more compute power than the entire solar system had in the 1950s; technology will make this process simple.
 
+Below is a link to a very simple webpage that can mark shots on a target and perform calculations. Free to use!
+http://www.leproductionservice.com
+
+## Make a Baseline: Establishing Your Starting Point
+
+### Budget Considerations
+
+Shooting is expensive, and it seems to be getting more expensive every year. Following this guide will not be cheap. One of the many goals is to prevent the waste of time and materials. It will feel more expensive upfront (because it will be). The first step in collecting data is pulling the trigger. Every piece of data collected early will make testing/troubleshooting less expensive in the future.
+
+### Data Collection Procedure
+
+In its most general sense, a baseline is a starting point or a reference point against which future measurements, observations, or comparisons are made. It represents the initial state or condition before a change, intervention, or experiment is introduced.
+
+Shoot in an environment with the fewest variables. Do your best to eliminate variables you can and to control the variables you can't. A good scenario is something like bags on a bench at an indoor range. Better would be a shooting fixture. I don't have access to a shooting fixture, and I don't have access to a bench. I do have access to an indoor range. I'm not physically able to shoot prone for more than a few minutes, so i use a bag on the range ammo self. Not perfect but nothing ever is. The data is this guid was was collected in this way. Don't let good enough get in the way of perfection.
+
+Log the x and y distance of every shot from the point of aim. Log the distance left or right of your POI as x and the distance up or down from your POI as y. It is easier if your points of impacts are always above and to the right of your point of aim. This prevents you from having to deal with negatives in your data set. Additionally recording the impacts in millimeters is perfectly accurate and will illuminate fractions(recording in mm is equivalent to recording in 24ths of an inch). Following the recommendations will produce a database of positive integers. Of course you are free to adapt any method you wish but for this text all the data will be positive metric integers. I also find it easier to convert to MRADS. IMHO it is very easy to convert to MOA with metric units.
+
+I draw targets in the equivalent of MS Paint and print them with my office printer. For the "bullseye", I use a triangle. The tip of the triangle is an infinitely small point of aim. It's much easier to measure the distance from the tip of an angle then, say, the center of a circle. Because I actually save the targets for later reference I limit the damage to a minimum number of shots per bullseye. It's of no use to turn a target into confetti and then try to pull data from it. Also I don't worry about collecting the specifics until I get home. At home I can take my time using a cheap pair of vernier calipers to measure and record the distance from the point of aim. A sharpy, paper-plates and a ruler will work just a well. Calipers and printers are not a requirement. The end goal is to lay down shots with a minimum of variables in a way individual shots can be easily recorded for later use.
+
+### Sample Size Recommendations
+
+Assume 20 shots. These equations seem to come into high levels of reliability for precision shooting at about 20 shoots as data points, really gets locked it at 30, seems to never really change after about 50. There are "tests" that are used to determine how well your data set will work. This is called checking for normality. This is a entire new level of complication that I don't expect the average user to bother with, but is included as an option of the website. The check for normality is with the Shapiro-Wilk test. The Shapiro-Wilk test is a way to check if a set of data is likely to have come from a normal distribution (the bell curve). It gives you a score (W) and a p-value. The formula to calculate W is (Σ aᵢ * xᵢ)² / Σ (xᵢ - x̄)². If the p-value is low (usually below 0.05), it suggests your data is probably not normally distributed. Shapiro-Wilk is commonly used in statistics to ensure data meets certain assumptions before using other tests. Again, in my experience, I don't often see a p > 0.05 until around 20 shots. It's so common that I just assume I will be starting at 20, and I make my targets accordingly. Don't skip the "flyers." There is a process to account for outliers.
+
+## Sample Data Recording Table
+
+| Shot # | X (mm) | Y (mm) |
+| :----- | :----- | :----- |
+| 1      | 5      | 3      |
+| 2      | 2      | 7      |
+| 3      | 8      | 1      |
+| ...    | ...    | ...    |
+| 20     | 4      | 6      |
+
+**Note:** X represents the horizontal distance from the point of aim, and Y represents the vertical distance.
+
+## Beyond the Hardware: PPPP
+
+**Position, Picture, Pull, Practice**
+
+Precision shooting isn't just about the hardware; it's about the shooter.
+
+* **Position:** A stable and consistent shooting position is crucial for minimizing movement and maximizing accuracy.
+* **Picture:** A clear and consistent sight picture ensures that your point of aim is precise.
+* **Pull:** A smooth and controlled trigger pull prevents disturbance of the rifle during the shot.
+* **Practice:** Consistent and deliberate practice is essential for developing and maintaining shooting skills.
+
+Bad technique can introduce significant variability into your data, masking the true performance of your rifle system. Therefore, it's essential to focus on developing good shooting fundamentals alongside your data collection efforts.
 
 
 
