@@ -2,18 +2,15 @@
 
 **This guide provides a systematic, data-driven methodology for evaluating precision shooting performance.** It is intended for individuals with the ability to consistently operate a rifle system and who seek to objectively assess modifications—such as comparing reloaded versus factory ammunition or transitioning to a precision chassis—through repeatable, evidence-based techniques.
 
-## Summary of Key Points
+## BLUF:  Bottom Line Up Front
 
-- Most mid-tier rifle systems, equipped with mid-tier optics and ammunition, exceed the capabilities of the average shooter.
-- **Shooter proficiency is the primary determinant of performance; equipment enhancements yield progressively smaller benefits.**
-- Entry-level rifle systems often exhibit comparable performance, and surpassing their capabilities requires significant investment and effort.
-- No device or technique can simplify precision shooting without rigorous validation. Claims to the contrary often lack substantiation.
+**Shooter proficiency is the primary determinant of performance; equipment enhancements yield progressively smaller benefits.**  Mid-teir modern rifles often exhibit exemplery performance, and surpassing their capabilities requires significant investment and effort.  No device or technique can simplify precision shooting.  Anyone tell you differently is trying to sell you somthing.
 
 ## Historical Context: Transitioning from Anecdotal to Statistical Evaluation
 
-My initial experience with a scoped rifle involved sighting in using three-shot groups. Under my father’s guidance, I fired three rounds, adjusted the scope, and deemed the system satisfactory after expending approximately half a box of .30-06 Core-Lokt ammunition. This approach proved effective for hunting purposes, as evidenced by its widespread success. For years, I relied on three-shot samples to assess rifle systems and ammunition due to their simplicity, cost-effectiveness, and adequacy.
+My first experience with a scoped rifle was sighting in using three-shot groups. Under my father’s direction, I fired three rounds, adjusted the scope, and repeated until it was deemed satisfactory.  Leaving with still over half of the single box of .30-06 Core-Lokt that was brought.  Pretty sure that box lasted at least 2 more seasons.  This approach proved effective for my purposes.  I was indocternated.  For years, I relied on three/five-shot groups to assess rifle systems becuase, well, it is simplicit, cost-effective, and adequat.
 
-The advent of online resources revealed a broad spectrum of evaluation methods, each endorsed by its proponents. A shift in perspective occurred when I recognized that traditional methods, while sufficient for basic functionality, were inadequate for verifying minute-of-angle (MOA) precision. **Digital platforms frequently host unverified assertions and promotional content unsupported by robust testing.** Online discussions abound with accounts of transforming adequate rifles into high-precision systems, yet these claims often lack statistical rigor. Traditional practices may confirm operational reliability but cannot substantiate sub-MOA performance. Moreover, much online content promotes unproven solutions, undermining objective analysis. A video demonstrating a 0.25 MOA three-shot group holds little evidentiary weight, akin to an isolated success in a controlled setting.
+Then came the internet and with it as many forum posts and methods as there were fathers and sons needing to sight in a rifle.  Each endorsed by its proponents.  But somthing wasnt adding up.  How can so many differnt methods claiming to be the best still end up with the same results.  If every method was best how could any be the best.  With so many methods in compatition to be the "right" method a new peridimn paradigm formed...  the MOA became above reproach.  If the method was the religion then the MOA become the martyr.  People were less interested in figuring out the best way to evalute a rifle system and more instered in getting a three shot group with a small MOA.  Its unclear if the MOA was pushed by the snake oil salesmen or if they just adopted it.  Traditional practices may confirm operational reliability but cannot substantiate sub-MOA performance. Moreover, much online content promotes unproven solutions, undermining objective analysis. A video demonstrating a 0.25 MOA three-shot group holds little evidentiary weight, akin to an isolated success in a controlled setting.
 
 **Indicators of Unreliable Information:**
 
