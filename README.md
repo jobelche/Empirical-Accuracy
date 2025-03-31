@@ -1,82 +1,72 @@
 # Empirical Accuracy: Demystifying Statistical Analysis of Shooting
 
-**Are you tired of wondering if your rifle upgrades are truly improving your accuracy? This guide provides a data-driven approach to precision shooting.** The purpose of this text is to establish repeatable testing concepts for precision shooting. The target audience is anyone with the skills to repeatedly shoot a rifle system with precision but is interested in exploring how to test if a change in the system is actually an improvement. Such as testing reloaded ammo vs. factory ammo, or upgrading from a factory stock to a custom precision chassis. Even minor changes like a different lot number of your favorite reloading component can be objectively evaluated using this method.
+**Struggling to prove your rifle upgrades actually work? This guide offers a data-driven way to test precision shooting.** It’s designed for shooters who can consistently fire a rifle system but want to objectively evaluate changes—like reloaded vs. factory ammo or a new chassis—using repeatable, reliable methods.
 
 ## BLUF (Bottom Line Up Front)
 
-Most mid-tier rifle systems with mid-tier optics running mid-tier ammunition will outperform most shooters. **Skill is the largest factor, and gear has diminishing returns.** Many budget rifle systems will perform similarly. There is no incantation you can say over a bag rest or magical rune to carve into the turret ring to make precision shooting "easy." Outshooting a store-bought rifle system is expensive and hard, and nothing is changing that. Anyone telling you differently is selling something.
+- Most mid-tier rifle systems (with mid-tier optics and ammo) outshoot most shooters.
+- **Skill trumps gear:** Upgrades offer diminishing returns beyond a certain point.
+- Budget rifles often perform similarly—outshooting them is costly and tough.
+- No shortcut or gadget makes precision shooting "easy." Anyone claiming otherwise is likely selling something.
 
 ## The Evolution of Shooting Analysis: From Anecdote to Data
 
-My first scoped rifle system was sighted in using three-shot groups. I was instructed by my father to fire three shots before adjusting the scope. I did as instructed, and with a little more than half a box of .30-06 Core-Lokt remaining, he and I were both satisfied that the rifle system was "sighted in." For most of my life afterward, I evaluated rifle systems and ammo based on three-shot samples. Why wouldn't I? Countless game have been harvested with rifle systems sighted in based on three-shot samples. It is simple, cheap, and, more importantly, it was good enough!
+My first scoped rifle was sighted in with three-shot groups. My father taught me to fire three rounds, tweak the scope, and call it "good enough" after half a box of .30-06 Core-Lokt. It worked—countless game fell to rifles zeroed this way. For years, I judged systems and ammo with three shots. It was simple, cheap, and effective.
 
-Then came the internet... It doesn't take long to realize that there are as many different ways of evaluating rifle systems and ammo as there were fathers and sons at the range... and they all seem to work just fine. The change came when good enough wasn't good enough... only MOA was good enough. **The internet is rife with unsubstantiated claims and marketing ploys that exploit the lack of rigorous testing.** Forums are filled with thousands, if not millions, of accounts of inherited processes that took a "good enough" rifle system to a SUB MOA rifle system. But something felt off. How can so many different processes have the same exacting results? I hesitantly realized that the old ways might be good enough to prove a rifle system "good enough" but can in no way prove a rifle system SUB MOA. It was devastating to also realize that an overwhelming majority of internet content was selling snake oil to reinforce using the old ways to prove a SUB MOA rifle system. This industry is one step away from selling magic crystals to help align your rifle system's chi and copper socks to stop distortions in your barrel harmonics. The internet is full of people either trying to sell you nonsense or trying to justify having bought into the nonsense. Some truly believe their product is working, and some are just lying. They even have video proof. A video of a 1/4 MOA three-shot group on the internet is as useful as a video of a hole-in-one at a driving range.
+Then the internet arrived, exposing a dizzying array of methods—each with fans swearing by it. What changed for me was realizing "good enough" didn’t cut it when chasing MOA precision. **Online, untested claims and marketing hype thrive on flimsy evidence.** Forums overflow with tales of turning "good enough" rifles into sub-MOA wonders, but the math didn’t add up. How could so many tricks yield identical results? The old ways might confirm a rifle works, but they can’t prove sub-MOA performance. Worse, much of the internet peddles modern snake oil—overpriced gadgets promising miracles. A 1/4 MOA three-shot group on YouTube proves as much as a hole-in-one at a driving range.
 
 **How to Spot Common Misleading Information:**
 
-* **Small sample sizes:** Be wary of claims based on very few shots.
-* **Selective data:** Look out for phrases like "excluding fliers," which introduce bias.
-* **Lack of context:** Claims without clear testing parameters are unreliable.
-* **Overly simplistic solutions:** Precision shooting is complex; there are no magic bullets.
+- **Small sample sizes:** A three-shot group touted as "sub-MOA."
+- **Selective data:** "Excluding fliers" to shrink group size.
+- **Lack of context:** No details on range, wind, or shooter skill.
+- **Overly simplistic solutions:** A $20 gizmo claiming to halve your groups.
 
 ## The Proof is in the LLN (Law of Large Numbers)
 
-According to the Merriam-Webster dictionary, the Law of Large Numbers is "the probability that the absolute value of the difference between the mean of a population sample and the mean of the population from which it is drawn is greater than an arbitrarily small amount approaches zero as the size of the sample approaches infinity."
-
-**In simpler terms, the more data you collect, the closer your average will get to the true average. Applied to shooting, this means that more shots provide a more accurate representation of your rifle's true performance.**
-
-If someone flips a coin three times and it lands heads-up three times, you instinctively know there is not enough information to prove that the coin will always land heads up. Is three flips enough to converge on the truth? No one would pay a premium for that coin as a heads only coin. We all instinctively know the coin isn't any better at landing heads-up than any other coin. Landing a coin heads up three times doesn't make it a "heads-up coin" any more than printing a sub-MOA three-shot group makes a rifle system a sub-MOA rifle system. How many coin tosses does your instinct tell you to take before you start to believe you are converging on the truth of the coin might be different from the average? Ten tosses? Fifty tosses? A thousand tosses? For whatever reason, humans seem to be better at detecting bad sample rates in simple systems but then easily accept bad sample rates in complex systems. The good news is that many rational minded people figured out processes to remove human bias from the process. When a slight human bias is the difference between choosing the best player in a draft or not, or launching a successful advertising campaign or not, these people have successfully resorted to the LLN. One random taste test for a new product is likely to have converged on the truth than 50 taste tests. One participant in a drug trial is less useful than 5,000 participants.
+The Law of Large Numbers (LLN) states that as sample size grows, your average gets closer to the true average. **In shooting, more shots reveal your rifle’s real performance.** Flip a coin three times and get heads each time—would you bet it’s a “heads-only” coin? No. Three flips don’t prove much, just like three shots don’t make a sub-MOA rifle. Instinct tells us 50 or 100 flips might reveal the truth, yet we often accept tiny shooting samples without question. Why? Simple systems (coins) feel intuitive; complex ones (rifles) cloud our judgment. Statisticians use LLN to cut through bias—whether picking a top athlete or testing ammo. More shots beat guesswork every time.
 
 ## Data is King: A Better System
 
-Use every piece of data. Every shot not recorded is wasted data. The end goal is to have a working database of impacts for statistical analysis.
+Every shot counts. Ignoring data—like skipping "fliers"—wastes ammo and skews results. Build a database of every impact for statistical analysis. Start with the tools below, and use this free resource to simplify calculations: [LE Production Service](http://www.leproductionservice.com).
 
 ## Term Definitions
 
 | Term                | Definition                                                                                                        | Example in Shooting                                                                                                  |
 | :------------------ | :------------------------------------------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------------------- |
-| Mean                | Average of data points.                                                                                              | Average distance of shots from the point of aim.                                                                     |
-| Standard Deviation  | Measure of data point spread.                                                                                       | Indicates consistency of shot placement. A smaller SD means tighter groups.                                             |
-| Extreme Spread (ES) | Distance between the two farthest shots.                                                                            | Total group size.                                                                                                      |
-| Mean Radius (MR)    | Average distance of each shot from the group's center.                                                              | Provides a more comprehensive measure of precision than ES.                                                           |
-| Sample Size         | Number of shots in the group.                                                                                      | The number of shots fired for testing. A larger number is more accurate.                                                 |
-| MOA                 | Minute of Angle, an angular measurement.                                                                           | 1 MOA is approximately 1 inch at 100 yards.                                                                         |
-| MRAD                | Milliradian, an angular measurement.                                                                               | 0.1 MRAD is approximately 0.36 inches at 100 yards.                                                                 |
+| Mean                | Average of data points.                                                                                              | Average shot distance from point of aim (e.g., 0.8 inches).                                                          |
+| Standard Deviation  | Measure of data point spread.                                                                                       | Shot consistency (e.g., SD of 0.3 inches means tight groups).                                                        |
+| Extreme Spread (ES) | Distance between the two farthest shots.                                                                            | Group size (e.g., 1.2 inches across 5 shots).                                                                        |
+| Mean Radius (MR)    | Average distance of each shot from the group’s center.                                                              | Precision measure (e.g., MR of 0.5 inches for 10 shots).                                                             |
+| Sample Size         | Number of shots in the group.                                                                                      | Shots fired for testing (e.g., 20 shots).                                                                            |
+| MOA                 | Minute of Angle, an angular measurement.                                                                           | 1 MOA is ~1 inch at 100 yards.                                                                                      |
+| MRAD               | Milliradian, an angular measurement.                                                                               | 0.1 MRAD is ~0.36 inches at 100 yards.                                                                              |
 
 ## Extreme Spread vs. Mean Radius: Understanding the Difference
 
-Don't base your system entirely on group size (Extreme Spread). Extreme Spread only tells you how bad the two worst shots were. This leads people to bias their data by self-limiting to small group sizes to lower their chance of a larger extreme spread. This is perfect if you are selling a gadget but not very useful if you are trying to actually test how useful that gadget is. Ignoring "fliers" is also a way to introducing personal bias to the system. It's way easier on the ego to ignore the "flyer" in a group than to have to come to the realization that the system is not sub-moa. Combine all this, and it's a perfect recipe for self-deceit. Each piece of data added (increasing sample size) makes your data as a whole more useful. You are paying for the ammo; the least you can do is log every shot.
+Extreme Spread (ES)—the distance between your two farthest shots—only highlights your worst performers. It’s tempting to test with tiny groups (like three shots) to keep ES low, or toss “fliers” to flatter your ego. But that’s bias, not truth. It’s great for selling gear, not for testing it. Every shot you fire adds value; log them all to see the full picture.
 
-However, Extreme Spread is useful in determining the health of your system. If you bought a $7k sub 1/2 MOA rifle and your first 3 shots have an extreme spread of 6 inches, that is an indicator that your system is suffering catastrophic failure. Insecure optics, faulty ammo, defective barrel... etc. You obviously don't need to print 20 shots if you spot a problem at three.
+ES does have a use: spotting major issues. If your $7k “sub-1/2 MOA” rifle prints a 6-inch ES in three shots, something’s broken—loose optics, bad ammo, or worse. You don’t need 20 rounds to diagnose that.
 
-Mean Radius provides a more comprehensive measure of precision than simply measuring the distance between the two farthest shots (extreme spread). We care less about the two worst shots. If, for example, you only record the ES/Group size. You fire 3 times and record the ES as .98 inch. You switch ammo and decide to fire 10 rounds also recording a ES of .98 inches. Most people will instantly understand that a 3 shot 1 inch group is not as good as a 10 shot 1 inch group. But exactly how much better is it... or is it actually any better at all? Using Mean Radius, you can actualize the difference in precision between those 2 groups. Any groups. The caveat is that 3 shots or even 10 shots is not enough data for the equations to really kick in. It's called the law of large numbers not the law of 3 numbers.
+Mean Radius (MR) tells a richer story. It averages each shot’s distance from the group center, not just the outliers. Say you fire 3 shots with a 0.98-inch ES, then 10 shots with the same ES. Intuition says 10 shots at 1 inch beats 3 shots at 1 inch—but how much? MR quantifies it. The catch? Small samples (3 or 10 shots) don’t fully harness the Law of Large Numbers. Aim for 20+ shots for reliable stats.
 
-Compared to the "old ways," calculating the mean radius is much more difficult. The basic concept is determining the center of the group, measuring each printed shot from the center, then finding the mean of each shot printed. The formula to calculate the MR is as follows: √((x₂ - x₁)² + (y₂ - y₁)²) where (x₁, y₁) are the coordinates of the group center and (x₂, y₂) are the coordinates of the shot hole.
-
-Don't let the equations turn you off from the process. Your phone has more compute power than the entire solar system had in the 1950s; technology will make this process simple.
-
-Below is a link to a very simple webpage that can mark shots on a target and perform calculations. Free to use!
-http://www.leproductionservice.com
+Calculating MR takes effort: find the group center, measure each shot’s distance from it (using √((x₂ - x₁)² + (y₂ - y₁)²)), then average those distances. Don’t sweat the math—your phone can handle it. Try this free tool to mark shots and crunch numbers: [LE Production Service](http://www.leproductionservice.com).
 
 ## Make a Baseline: Establishing Your Starting Point
 
 ### Budget Considerations
 
-Shooting is expensive, and it seems to be getting more expensive every year. Following this guide will not be cheap. One of the many goals is to prevent the waste of time and materials. It will feel more expensive upfront (because it will be). The first step in collecting data is pulling the trigger. Every piece of data collected early will make testing/troubleshooting less expensive in the future.
+Shooting isn’t cheap, and this method ups the upfront cost. A 20-shot baseline eats ammo—think $20-$50 per test, depending on caliber. But it saves money long-term by avoiding guesswork and dud upgrades. Invest early in data to cut future waste.
 
 ### Data Collection Procedure
 
-In its most general sense, a baseline is a starting point or a reference point against which future measurements, observations, or comparisons are made. It represents the initial state or condition before a change, intervention, or experiment is introduced.
+A baseline is your rifle’s starting point before tweaks. Minimize variables: shoot indoors from a bench with bags, or a fixture if you’ve got one. I use a bag on an ammo shelf at an indoor range—imperfect, but it works. Control what you can (wind, position); note what you can’t (humidity, barrel heat).
 
-Shoot in an environment with the fewest variables. Do your best to eliminate variables you can and to control the variables you can't. A good scenario is something like bags on a bench at an indoor range. Better would be a shooting fixture. I don't have access to a shooting fixture, and I don't have access to a bench. I do have access to an indoor range. I'm not physically able to shoot prone for more than a few minutes, so i use a bag on the range ammo self. Not perfect but nothing ever is. The data is this guid was was collected in this way. Don't let good enough get in the way of perfection.
-
-Log the x and y distance of every shot from the point of aim. Log the distance left or right of your POI as x and the distance up or down from your POI as y. It is easier if your points of impacts are always above and to the right of your point of aim. This prevents you from having to deal with negatives in your data set. Additionally recording the impacts in millimeters is perfectly accurate and will illuminate fractions(recording in mm is equivalent to recording in 24ths of an inch). Following the recommendations will produce a database of positive integers. Of course you are free to adapt any method you wish but for this text all the data will be positive metric integers. I also find it easier to convert to MRADS. IMHO it is very easy to convert to MOA with metric units.
-
-I draw targets in the equivalent of MS Paint and print them with my office printer. For the "bullseye", I use a triangle. The tip of the triangle is an infinitely small point of aim. It's much easier to measure the distance from the tip of an angle then, say, the center of a circle. Because I actually save the targets for later reference I limit the damage to a minimum number of shots per bullseye. It's of no use to turn a target into confetti and then try to pull data from it. Also I don't worry about collecting the specifics until I get home. At home I can take my time using a cheap pair of vernier calipers to measure and record the distance from the point of aim. A sharpy, paper-plates and a ruler will work just a well. Calipers and printers are not a requirement. The end goal is to lay down shots with a minimum of variables in a way individual shots can be easily recorded for later use.
+Log every shot’s X (left/right) and Y (up/down) distance from the point of aim in millimeters—think 5 mm left, 3 mm up. Keep impacts above and right of the POA to avoid negatives, and use mm for precision (it’s like 24ths of an inch). I draw targets in Paint with a triangle bullseye—its sharp tip beats a circle for measuring. Print, shoot, and measure later with calipers (or a ruler and Sharpie). Limit shots per target to avoid confetti; save them for reference.
 
 ### Sample Size Recommendations
 
-Assume 20 shots. These equations seem to come into high levels of reliability for precision shooting at about 20 shoots as data points, really gets locked it at 30, seems to never really change after about 50. There are "tests" that are used to determine how well your data set will work. This is called checking for normality. This is a entire new level of complication that I don't expect the average user to bother with, but is included as an option of the website. The check for normality is with the Shapiro-Wilk test. The Shapiro-Wilk test is a way to check if a set of data is likely to have come from a normal distribution (the bell curve). It gives you a score (W) and a p-value. The formula to calculate W is (Σ aᵢ * xᵢ)² / Σ (xᵢ - x̄)². If the p-value is low (usually below 0.05), it suggests your data is probably not normally distributed. Shapiro-Wilk is commonly used in statistics to ensure data meets certain assumptions before using other tests. Again, in my experience, I don't often see a p > 0.05 until around 20 shots. It's so common that I just assume I will be starting at 20, and I make my targets accordingly. Don't skip the "flyers." There is a process to account for outliers.
+Start with 20 shots. Data gets reliable around 20, locks in by 30, and barely shifts past 50. Statisticians use tests like Shapiro-Wilk to check if your shots form a normal pattern (bell curve)—optional, but available on the website. In my tests, 20 shots usually suffice; I design targets for that. Include every shot—outliers have their own fix later.
 
 ## Sample Data Recording Table
 
@@ -88,17 +78,23 @@ Assume 20 shots. These equations seem to come into high levels of reliability fo
 | ...    | ...    | ...    |
 | 20     | 4      | 6      |
 
-**Note:** X represents the horizontal distance from the point of aim, and Y represents the vertical distance.
+**Note:** X is horizontal distance from the point of aim; Y is vertical distance.
 
 ## Beyond the Hardware: PPPP
 
-**Position, Picture, Pull, Practice**
+**Position, Picture, Pull, Practice**—your skill shapes the data. Sloppy technique (wobbly stance, jerky trigger) muddies results, hiding your rifle’s true potential. Master these fundamentals:
 
-Precision shooting isn't just about the hardware; it's about the shooter.
+- **Position:** Stay stable and consistent.
+- **Picture:** Keep your sight clear and steady.
+- **Pull:** Squeeze smoothly, no flinch.
+- **Practice:** Drill deliberately to refine control.
 
-* **Position:** A stable and consistent shooting position is crucial for minimizing movement and maximizing accuracy.
-* **Picture:** A clear and consistent sight picture ensures that your point of aim is precise.
-* **Pull:** A smooth and controlled trigger pull prevents disturbance of the rifle during the shot.
-* **Practice:** Consistent and deliberate practice is essential for developing and maintaining shooting skills.
+---
 
-Bad technique can introduce significant variability into your data, masking the true performance of your rifle system. Therefore, it's essential to focus on developing good shooting fundamentals alongside your data collection efforts.
+### Summary Cheat Sheet
+- **Goal:** Test rifle changes objectively.
+- **Method:** Log 20+ shots, calculate Mean Radius, avoid bias.
+- **Tool:** [LE Production Service](http://www.leproductionservice.com).
+- **Tip:** Skill > gear. Practice the PPPP.
+
+Try this method and share your results—let’s build a data-driven shooting community!
