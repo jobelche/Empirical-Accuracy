@@ -1,0 +1,580 @@
+import React, { useState, useRef, useEffect, useCallback } from 'react';
+import { Ruler, Target, PlusCircle, PenTool, Grid, Image as ImageIcon, MinusCircle } from 'lucide-react';
+
+// Main App Component
+const App = () => {
+    // State variables
+    const [imageSrc, setImageSrc] = useState(null); // URL of the loaded image
+    const [imageDimensions, setImageDimensions] = useState({ width: 0, height: 0 }); // Dimensions of the image
+    const [unit, setUnit] = useState('imperial'); // 'imperial' or 'metric'
+    const [pixelsPerUnit, setPixelsPerUnit] = useState(null); // Scale: pixels per inch or pixels per millimeter
+    const [scalePoints, setScalePoints] = useState([]); // Array to store two points for scale definition
+    const [currentTool, setCurrentTool] = useState('none'); // 'none', 'scale_point1', 'scale_point2', 'aim_point', 'impact_point'
+    const [groups, setGroups] = useState([]); // Array of group objects
+    const [activeGroupId, setActiveGroupId] = useState(null); // ID of the currently selected group
+    const [message, setMessage] = useState(''); // Message to display to the user
+
+    // State for custom modal (replaces window.confirm/alert) - REMOVED
+    // const [showModal, setShowModal] = useState(false);
+    // const [modalContent, setModalContent] = useState('');
+    // const [modalType, setModalType] = useState('alert'); // 'alert' or 'confirm'
+    // const [onConfirmAction, setOnConfirmAction] = useState(null); // Callback for 'confirm' type modal
+
+    const canvasRef = useRef(null); // Reference to the canvas element
+    const imgRef = useRef(null); // Reference to the image element (for dimensions)
+
+    // Utility function to display messages in the sidebar only
+    const showMessage = (msg) => {
+        setMessage(msg);
+    };
+
+    // Close modal function - REMOVED
+    // const closeModal = () => {
+    //     setShowModal(false);
+    //     setModalContent('');
+    //     setModalType('alert');
+    //     setOnConfirmAction(null);
+    // };
+
+    // Handle modal confirmation - REMOVED
+    // const handleModalConfirm = () => {
+    //     if (onConfirmAction) {
+    //         onConfirmAction();
+    //     }
+    //     closeModal();
+    // };
+
+    // --- Image Handling ---
+    const handleImageLoad = (event) => {
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                setImageSrc(e.target.result);
+                // Reset states when a new image is loaded
+                setPixelsPerUnit(null);
+                setScalePoints([]);
+                setGroups([]);
+                setActiveGroupId(null);
+                setCurrentTool('none');
+                showMessage('Image loaded successfully. Now, define the scale.');
+            };
+            reader.readAsDataURL(file);
+        }
+    };
+
+    // Once the image is loaded into the <img> tag, get its natural dimensions
+    useEffect(() => {
+        // This effect ensures drawImageOnCanvas is called when imageSrc changes,
+        // after the imgRef.current has loaded the new image and updated its dimensions.
+        if (imgRef.current && imageSrc) {
+            drawImageOnCanvas();
+        }
+    }, [imageSrc]); // Rerun when imageSrc changes
+
+
+    // Function to draw the image on the canvas
+    const drawImageOnCanvas = useCallback(() => {
+        const canvas = canvasRef.current;
+        const ctx = canvas?.getContext('2d');
+        if (ctx && imageSrc && imgRef.current) {
+            const img = imgRef.current; // Use the ref to the actual <img> element
+            // Wait for the image to be fully loaded in the img element
+            if (img.complete) {
+                // Clear the canvas first
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                // Draw the image to fill the entire intrinsic canvas area
+                ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+
+                // Draw existing scale points, POA, and POIs
+                drawVisuals(ctx, canvas);
+            } else {
+                // If image is not yet complete, set an onload handler to redraw
+                img.onload = () => {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+                    drawVisuals(ctx, canvas);
+                };
+            }
+        }
+    }, [imageSrc, scalePoints, groups]); // Depend on imageSrc and points for redrawing
+
+    // Draw all visual markers (scale points, POA, POIs)
+    const drawVisuals = (ctx, canvas) => {
+        // Draw scale points
+        scalePoints.forEach((p, index) => {
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, 5, 0, 2 * Math.PI);
+            ctx.fillStyle = index === 0 ? 'yellow' : 'cyan';
+            ctx.fill();
+            ctx.strokeStyle = 'black';
+            ctx.lineWidth = 1;
+            ctx.stroke();
+            ctx.font = '12px Arial';
+            ctx.fillStyle = 'black';
+            ctx.fillText(`Scale ${index + 1}`, p.x + 8, p.y - 8);
+        });
+
+        // Draw groups' points
+        groups.forEach(group => {
+            // Draw Point of Aim
+            if (group.pointOfAim) {
+                ctx.beginPath();
+                ctx.arc(group.pointOfAim.x, group.pointOfAim.y, 6, 0, 2 * Math.PI);
+                ctx.fillStyle = 'red'; // Point of Aim color
+                ctx.fill();
+                ctx.strokeStyle = 'black';
+                ctx.lineWidth = 1;
+                ctx.stroke();
+                ctx.font = '12px Arial';
+                ctx.fillStyle = 'white';
+                ctx.fillText(`POA (${group.name})`, group.pointOfAim.x + 8, group.pointOfAim.y - 8);
+            }
+
+            // Draw Points of Impact
+            group.pointsOfImpact.forEach((p, index) => {
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, 4, 0, 2 * Math.PI);
+                ctx.fillStyle = 'blue'; // Point of Impact color
+                ctx.fill();
+                ctx.strokeStyle = 'black';
+                ctx.lineWidth = 1;
+                ctx.stroke();
+                ctx.font = '10px Arial';
+                ctx.fillStyle = 'white';
+                ctx.fillText(`${group.name} POI ${index + 1}`, p.x + 6, p.y - 6);
+            });
+        });
+    };
+
+    // Redraw canvas whenever relevant state changes
+    useEffect(() => {
+        drawImageOnCanvas();
+    }, [drawImageOnCanvas, scalePoints, groups, currentTool]);
+
+
+    // --- Canvas Click Handler ---
+    const handleCanvasClick = (event) => {
+        const canvas = canvasRef.current;
+        if (!canvas || !imageSrc) {
+            showMessage('Please load an image first.');
+            return;
+        }
+
+        const rect = canvas.getBoundingClientRect();
+        // Calculate the ratio of the canvas's actual internal width/height to its displayed width/height
+        // This is crucial for correctly mapping click coordinates when the canvas is scaled by CSS
+        const scaleX = canvas.width / rect.width;
+        const scaleY = canvas.height / rect.height;
+
+        // Get the click coordinates relative to the canvas element and then scale them
+        const x = (event.clientX - rect.left) * scaleX;
+        const y = (event.clientY - rect.top) * scaleY;
+
+        switch (currentTool) {
+            case 'scale_point1':
+                setScalePoints([{ x, y }]);
+                setCurrentTool('scale_point2');
+                showMessage('Click the second point to define the scale.');
+                break;
+            case 'scale_point2':
+                const newScalePoints = [...scalePoints, { x, y }];
+                setScalePoints(newScalePoints);
+                calculatePixelsPerUnit(newScalePoints);
+                setCurrentTool('none');
+                break;
+            case 'aim_point':
+                if (!activeGroupId) {
+                    showMessage('Please create or select a group first.');
+                    return;
+                }
+                setGroups(prevGroups => prevGroups.map(group =>
+                    group.id === activeGroupId
+                        ? { ...group, pointOfAim: { x, y } }
+                        : group
+                ));
+                showMessage(`Point of Aim set for Group ${groups.find(g => g.id === activeGroupId)?.name || activeGroupId}.`);
+                setCurrentTool('none');
+                break;
+            case 'impact_point':
+                if (!activeGroupId) {
+                    showMessage('Please create or select a group first.');
+                    return;
+                }
+                setGroups(prevGroups => prevGroups.map(group =>
+                    group.id === activeGroupId
+                        ? { ...group, pointsOfImpact: [...group.pointsOfImpact, { x, y }] }
+                        : group
+                ));
+                showMessage(`Point of Impact added to Group ${groups.find(g => g.id === activeGroupId)?.name || activeGroupId}. Click more or select another tool.`);
+                break;
+            default:
+                // No active tool, do nothing or show a message
+                break;
+        }
+    };
+
+    // --- Scale Definition ---
+    const startDefineScale = () => {
+        if (!imageSrc) {
+            showMessage('Please load an image first.');
+            return;
+        }
+        setScalePoints([]);
+        setCurrentTool('scale_point1');
+        showMessage('Click the first point on the image to define your scale (e.g., the ends of a known distance).');
+    };
+
+    const calculatePixelsPerUnit = (points) => {
+        if (points.length === 2) {
+            const p1 = points[0];
+            const p2 = points[1];
+            const pixelDistance = Math.sqrt(Math.pow(p2.x - p1.x, 2) + Math.pow(p2.y - p1.y, 2));
+            const realWorldDistance = unit === 'imperial' ? 1 : 10; // 1 inch or 10 mm
+            setPixelsPerUnit(pixelDistance / realWorldDistance);
+            showMessage(`Scale defined: ${pixelDistance.toFixed(2)} pixels = ${realWorldDistance} ${unit === 'imperial' ? 'inch' : 'millimeters'}.`);
+        }
+    };
+
+    // --- Group Management ---
+    const createNewGroup = () => {
+        const newGroupId = `group-${groups.length + 1}`;
+        const newGroup = {
+            id: newGroupId,
+            name: `Group ${groups.length + 1}`,
+            pointOfAim: null,
+            pointsOfImpact: []
+        };
+        setGroups([...groups, newGroup]);
+        setActiveGroupId(newGroupId);
+        showMessage(`New group "${newGroup.name}" created and selected.`);
+    };
+
+    const removeSelectedGroup = () => {
+        if (!activeGroupId) {
+            showMessage('No group selected to remove.');
+            return;
+        }
+
+        const groupToRemove = groups.find(g => g.id === activeGroupId);
+        // Direct removal without modal, message displayed in sidebar
+        setGroups(prevGroups => prevGroups.filter(group => group.id !== activeGroupId));
+        setActiveGroupId(null); // Deselect the removed group
+        showMessage(`Group "${groupToRemove?.name || activeGroupId}" removed successfully.`);
+        setCurrentTool('none'); // Reset tool after group removal
+    };
+
+    // --- Point Marking Tools ---
+    const startMarkAimPoint = () => {
+        if (!imageSrc) { showMessage('Please load an image first.'); return; }
+        if (!activeGroupId) { showMessage('Please create or select a group first.'); return; }
+        setCurrentTool('aim_point');
+        showMessage('Click on the image to mark the Point of Aim for the current group.');
+    };
+
+    const startMarkImpactPoints = () => {
+        if (!imageSrc) { showMessage('Please load an image first.'); return; }
+        if (!activeGroupId) { showMessage('Please create or select a group first.'); return; }
+        setCurrentTool('impact_point');
+        showMessage('Click on the image to mark Points of Impact. Click on another tool button when done.');
+    };
+
+    // --- Statistical Calculations ---
+    const getAllCombinedImpactPoints = useCallback(() => {
+        const combinedPoints = [];
+        groups.forEach(group => {
+            if (group.pointOfAim && group.pointsOfImpact.length > 0) {
+                const poa = group.pointOfAim;
+                group.pointsOfImpact.forEach(poi => {
+                    combinedPoints.push({
+                        x: poi.x - poa.x, // Relative X to POA
+                        y: poi.y - poa.y  // Relative Y to POA
+                    });
+                });
+            }
+        });
+        return combinedPoints;
+    }, [groups]);
+
+    const calculateStatistics = useCallback(() => {
+        if (!pixelsPerUnit) {
+            return "Please define the image scale first.";
+        }
+
+        const combinedImpactPoints = getAllCombinedImpactPoints();
+
+        if (combinedImpactPoints.length === 0) {
+            return "No points of impact to calculate statistics.";
+        }
+
+        const unitName = unit === 'imperial' ? 'inch' : 'mm';
+
+        // Convert pixel coordinates to real-world units
+        const realWorldPoints = combinedImpactPoints.map(p => ({
+            x: p.x / pixelsPerUnit,
+            y: p.y / pixelsPerUnit
+        }));
+
+        // Calculate individual point distances from origin (POA)
+        let pointDistancesFromAim = []; // Initialize to ensure it's always defined
+        if (Array.isArray(realWorldPoints)) {
+            pointDistancesFromAim = realWorldPoints.map(p => ({
+                x: p.x.toFixed(3),
+                y: p.y.toFixed(3)
+            }));
+        }
+
+
+        // Horizontal Spread (Max X - Min X)
+        const minX = Math.min(...realWorldPoints.map(p => p.x));
+        const maxX = Math.max(...realWorldPoints.map(p => p.x));
+        const horizontalSpread = (maxX - minX).toFixed(3);
+
+        // Vertical Spread (Max Y - Min Y)
+        const minY = Math.min(...realWorldPoints.map(p => p.y));
+        const maxY = Math.max(...realWorldPoints.map(p => p.y));
+        const verticalSpread = (maxY - minY).toFixed(3);
+
+        // Mean Point of Impact (MPI) coordinates relative to POA
+        const sumX = realWorldPoints.reduce((acc, p) => acc + p.x, 0);
+        const sumY = realWorldPoints.reduce((acc, p) => acc + p.y, 0);
+        const mpiX = sumX / realWorldPoints.length;
+        const mpiY = sumY / realWorldPoints.length;
+
+        // Mean Radius: Average distance of each POI from the MPI
+        let totalRadius = 0;
+        realWorldPoints.forEach(p => {
+            const distance = Math.sqrt(
+                Math.pow(p.x - mpiX, 2) +
+                Math.pow(p.y - mpiY, 2)
+            );
+            totalRadius += distance;
+        });
+        const meanRadius = (totalRadius / realWorldPoints.length).toFixed(3);
+
+        // Extreme Spread (Max distance between any two points of impact)
+        let extremeSpread = 0;
+        if (realWorldPoints.length > 1) {
+            for (let i = 0; i < realWorldPoints.length; i++) {
+                for (let j = i + 1; j < realWorldPoints.length; j++) {
+                    const dist = Math.sqrt(
+                        Math.pow(realWorldPoints[i].x - realWorldPoints[j].x, 2) +
+                        Math.pow(realWorldPoints[i].y - realWorldPoints[j].y, 2)
+                    );
+                    if (dist > extremeSpread) {
+                        extremeSpread = dist;
+                    }
+                }
+            }
+        }
+        extremeSpread = extremeSpread.toFixed(3);
+
+        let output = `Combined Group Statistics (${unitName})\n\n`;
+
+        // Display summary statistics first
+        output += `Horizontal Spread: ${horizontalSpread} ${unitName}\n`;
+        output += `Vertical Spread: ${verticalSpread} ${unitName}\n`;
+        output += `Extreme Spread: ${extremeSpread} ${unitName}\n`;
+        output += `Mean Radius: ${meanRadius} ${unitName}\n\n`;
+
+        // Then display individual points of impact
+        output += `Individual Points of Impact (Relative to POA):\n`;
+        pointDistancesFromAim.forEach((p, index) => {
+            output += `  ${index + 1},${p.x},${p.y}\n`;
+        });
+        
+        return output;
+    }, [groups, pixelsPerUnit, unit, getAllCombinedImpactPoints]);
+
+    const statsOutput = calculateStatistics();
+
+    return (
+        <div className="flex flex-col md:flex-row h-screen font-inter bg-gray-100 text-gray-800">
+            {/* Custom Modal for messages and confirmations - REMOVED */}
+            {/* {showModal && (
+                <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+                    <div className="bg-white rounded-xl shadow-lg p-6 max-w-sm w-full text-center">
+                        <p className="text-lg font-semibold mb-4 text-gray-800">{modalContent}</p>
+                        {modalType === 'alert' && (
+                            <button
+                                onClick={closeModal}
+                                className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-200"
+                            >
+                                OK
+                            </button>
+                        )}
+                        {modalType === 'confirm' && (
+                            <div className="flex justify-center space-x-4">
+                                <button
+                                    onClick={handleModalConfirm}
+                                    className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-200"
+                                >
+                                    Yes
+                                </button>
+                                <button
+                                    onClick={closeModal}
+                                    className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-lg shadow-md transition duration-200"
+                                >
+                                    No
+                                </button>
+                            </div>
+                        )}
+                    </div>
+                </div>
+            )} */}
+
+            {/* Sidebar */}
+            <div className="w-full md:w-1/3 p-4 bg-gray-900 text-white shadow-lg flex flex-col rounded-b-lg md:rounded-r-lg md:rounded-bl-none">
+                <h1 className="text-2xl font-bold mb-6 text-center text-blue-300">Group Analyzer</h1>
+
+                <div className="mb-6 space-y-3">
+                    <label htmlFor="imageUpload" className="block text-sm font-medium text-gray-300 mb-1">
+                        Load Image
+                    </label>
+                    <div className="flex items-center space-x-2">
+                        <input
+                            type="file"
+                            id="imageUpload"
+                            accept="image/*"
+                            onChange={handleImageLoad}
+                            className="block w-full text-sm text-gray-200 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-semibold file:bg-blue-500 file:text-white hover:file:bg-blue-600 transition duration-200 cursor-pointer rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        />
+                    </div>
+                </div>
+
+                <div className="mb-6 space-y-3">
+                    <h2 className="text-lg font-semibold text-blue-200 mb-2">Tools</h2>
+
+                    <button
+                        onClick={() => setUnit(unit === 'imperial' ? 'metric' : 'imperial')}
+                        className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg flex items-center justify-center space-x-2 shadow-md transition duration-200"
+                    >
+                        <Ruler size={18} />
+                        <span>Toggle Units: {unit === 'imperial' ? 'Imperial' : 'Metric'}</span>
+                    </button>
+
+                    <button
+                        onClick={startDefineScale}
+                        disabled={!imageSrc}
+                        className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg flex items-center justify-center space-x-2 shadow-md transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                        <Grid size={18} />
+                        <span>Define Scale ({unit === 'imperial' ? '1 inch' : '10 mm'})</span>
+                    </button>
+
+                    <button
+                        onClick={createNewGroup}
+                        disabled={!imageSrc}
+                        className="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg flex items-center justify-center space-x-2 shadow-md transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                        <PlusCircle size={18} />
+                        <span>Create New Group</span>
+                    </button>
+
+                    {/* New button to remove a group */}
+                    <button
+                        onClick={removeSelectedGroup}
+                        disabled={!activeGroupId || groups.length === 0}
+                        className="w-full bg-red-700 hover:bg-red-800 text-white font-bold py-2 px-4 rounded-lg flex items-center justify-center space-x-2 shadow-md transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                        <MinusCircle size={18} />
+                        <span>Remove Selected Group</span>
+                    </button>
+
+                    {groups.length > 0 && (
+                        <div className="mb-3">
+                            <label htmlFor="groupSelect" className="block text-sm font-medium text-gray-300 mb-1">
+                                Active Group:
+                            </label>
+                            <select
+                                id="groupSelect"
+                                value={activeGroupId || ''}
+                                onChange={(e) => setActiveGroupId(e.target.value)}
+                                className="block w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-white"
+                            >
+                                <option value="">Select a Group</option>
+                                {groups.map(group => (
+                                    <option key={group.id} value={group.id}>
+                                        {group.name}
+                                    </option>
+                                ))}
+                            </select>
+                        </div>
+                    )}
+
+                    <button
+                        onClick={startMarkAimPoint}
+                        disabled={!imageSrc || !activeGroupId || !pixelsPerUnit}
+                        className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg flex items-center justify-center space-x-2 shadow-md transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                        <Target size={18} />
+                        <span>Mark Point of Aim</span>
+                    </button>
+
+                    <button
+                        onClick={startMarkImpactPoints}
+                        disabled={!imageSrc || !activeGroupId || !pixelsPerUnit}
+                        className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg flex items-center justify-center space-x-2 shadow-md transition duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+                    >
+                        <PenTool size={18} />
+                        <span>Mark Points of Impact</span>
+                    </button>
+                </div>
+
+                <div className="mb-6 p-3 bg-gray-800 rounded-lg shadow-inner">
+                    <h2 className="text-lg font-semibold text-blue-200 mb-2">Current Status</h2>
+                    <p className="text-sm text-gray-300">{message}</p>
+                    {pixelsPerUnit && (
+                        <p className="text-sm text-gray-300 mt-2">
+                            Current Scale: 1 {unit === 'imperial' ? 'inch' : 'mm'} = {(pixelsPerUnit / (unit === 'imperial' ? 1 : 10)).toFixed(2)} pixels
+                        </p>
+                    )}
+                </div>
+
+                <div className="flex-grow p-3 bg-gray-800 rounded-lg shadow-inner overflow-auto">
+                    <h2 className="text-lg font-semibold text-blue-200 mb-2">Group Statistics</h2>
+                    <pre className="text-sm text-gray-300 whitespace-pre-wrap">
+                        {statsOutput}
+                    </pre>
+                </div>
+            </div>
+
+            {/* Main Canvas Area */}
+            <div className="flex-grow flex items-center justify-center p-4 bg-gray-200 relative overflow-hidden rounded-lg md:rounded-l-lg md:rounded-tr-none">
+                {imageSrc ? (
+                    <div className="relative max-w-full max-h-full flex items-center justify-center overflow-auto">
+                        <img
+                            ref={imgRef}
+                            src={imageSrc}
+                            alt="Loaded"
+                            className="hidden" // Hidden, only for natural dimensions
+                            onLoad={(e) => {
+                                const img = e.target;
+                                setImageDimensions({ width: img.naturalWidth, height: img.naturalHeight });
+                                const canvas = canvasRef.current;
+                                if (canvas) {
+                                    // Set canvas internal resolution to match image natural dimensions
+                                    canvas.width = img.naturalWidth;
+                                    canvas.height = img.naturalHeight;
+                                    drawImageOnCanvas(); // Redraw once dimensions are set
+                                }
+                            }}
+                        />
+                        <canvas
+                            ref={canvasRef}
+                            className="border-2 border-gray-400 shadow-xl rounded-lg w-full h-full cursor-crosshair" // Rely on w-full h-full
+                            onClick={handleCanvasClick}
+                        ></canvas>
+                    </div>
+                ) : (
+                    <div className="text-center text-gray-500">
+                        <ImageIcon size={64} className="mx-auto mb-4" />
+                        <p className="text-xl">Load an image to get started!</p>
+                    </div>
+                )}
+            </div>
+        </div>
+    );
+};
+
+export default App;
